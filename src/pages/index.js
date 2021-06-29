@@ -57,7 +57,7 @@ export default function Home() {
       <Nav />
       <HomeHeader />
       <HomeBlock>
-        <HomeBlockTitle Tag="h1">Mariko.js</HomeBlockTitle>
+        <HomeBlockTitle Tag="h1">Mariko</HomeBlockTitle>
         <p>
           <b>Mariko</b> is a{' '}
           <b className="border-b border-primary">

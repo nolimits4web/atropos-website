@@ -4,7 +4,7 @@ import '../styles/globals.scss';
 import 'mariko/mariko.css';
 
 function MyApp({ Component, pageProps }) {
-  const title = 'Mariko - create stunning touch-friendly 3D hover effects';
+  const title = 'Mariko - stunning touch-friendly 3D hover effects';
   const description = '';
   return (
     <>

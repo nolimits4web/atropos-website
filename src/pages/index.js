@@ -30,7 +30,7 @@ const GameBox = ({ bg, logo, studios }) => {
         />
         <img
           className="game-box-bg"
-          data-mariko-offset="-4.5"
+          data-mariko-offset="-4"
           src={`/images/game-boxes/${bg}`}
           alt=""
         />
@@ -59,11 +59,20 @@ export default function Home() {
       <HomeBlock>
         <HomeBlockTitle Tag="h1">Mariko.js</HomeBlockTitle>
         <p>
-          <b>Mariko</b> is a free and open-source JavaScript library to create
-          stunning touch-friendly 3D hover effects.
+          <b>Mariko</b> is a{' '}
+          <b className="border-b border-primary">
+            lightweight, free and open-source
+          </b>{' '}
+          JavaScript library to create{' '}
+          <b className="border-b border-primary">
+            stunning touch-friendly 3D hover effects
+          </b>
+          .
         </p>
         <p className="mt-4">
-          Available for <b>JavaScript</b>, <b>React</b> and <b>Vue.js</b>
+          Available for <b className="border-b border-primary">JavaScript</b>,{' '}
+          <b className="border-b border-primary">React</b> and{' '}
+          <b className="border-b border-primary">Vue.js</b>
         </p>
         <p className="mt-4 flex items-center space-x-4 justify-center">
           <img

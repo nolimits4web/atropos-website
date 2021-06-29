@@ -65,7 +65,7 @@ export default function Home() {
           </b>{' '}
           JavaScript library to create{' '}
           <b className="border-b border-primary">
-            stunning touch-friendly 3D hover effects
+            stunning touch-friendly 3D parallax hover effects
           </b>
           .
         </p>

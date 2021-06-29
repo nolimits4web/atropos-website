@@ -1,6 +1,9 @@
 .game-box {
   width: 100%;
 }
+.game-box .mariko-inner {
+  z-index: 1;
+}
 .game-box img {
   position: absolute;
   left: 0;
@@ -37,8 +40,10 @@
   top: -8px;
   background: #086ef4;
   border-radius: 8px;
+  z-index: 1;
 }
 
 .game-box .mariko-shadow {
   opacity: 0.5;
+  transform: translate3d(0, 0, -1px);
 }

@@ -1,0 +1,44 @@
+.game-box {
+  width: 100%;
+}
+.game-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  z-index: 1;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  max-width: none;
+}
+.game-box img.game-box-bg {
+  left: -5%;
+  top: -5%;
+  width: 110%;
+  height: 110%;
+}
+.game-box img.game-box-size {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+.game-box .mariko-rotate::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: calc(100% + 8px);
+  height: calc(100% + 16px);
+  top: -8px;
+  background: #086ef4;
+  border-radius: 8px;
+}
+
+.game-box .mariko-shadow {
+  opacity: 0.5;
+}

@@ -9,6 +9,7 @@ module.exports = {
     'next/core-web-vitals',
     'plugin:react/recommended',
     'airbnb',
+    'prettier',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -24,5 +25,11 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
+    'import/prefer-default-export': 'off',
+    '@next/next/no-img-element': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-no-target-blank': 'off',
+    'arrow-body-style': 'off',
+    camelcase: 'off',
   },
 };

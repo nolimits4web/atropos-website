@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="526" height="656" viewBox="0 0 526 656">
+  <defs>
+    <rect id="box-size-a" width="526" height="656" x="0" y="0"/>
+  </defs>
+  <use fill-rule="evenodd" xlink:href="#box-size-a"/>
+</svg>

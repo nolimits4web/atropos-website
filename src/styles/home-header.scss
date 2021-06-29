@@ -1,0 +1,53 @@
+.mariko-header {
+  width: 100%;
+}
+.mariko-header .mariko-inner {
+  border-radius: 10px;
+}
+.mariko-header img {
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  display: block;
+  z-index: 1;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  max-width: none;
+}
+.mariko-header img.mariko-header-spacer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+.mariko-header .mariko-shadow {
+  filter: blur(50px);
+  opacity: 0.25;
+}
+.mariko-header .mariko-highlight {
+  z-index: 100;
+}
+.mariko-header-text {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  left: 0%;
+  top: 0%;
+}
+
+.mariko-header-button-wrap {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

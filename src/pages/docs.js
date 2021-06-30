@@ -38,7 +38,7 @@ export default function Docs() {
 
           <SectionTitle title="Browser Compatibility" />
           <p>
-            Mariko compatible with browsers which support the following
+            Mariko is compatible with browsers which support the following
             features:
           </p>
           <ul>
@@ -106,7 +106,7 @@ export default function Docs() {
           </ul>
 
           <SectionTitle title="HTML Layout" />
-          <p>Now, we need to add basic Swiper layout to our app:</p>
+          <p>Now, we need to add basic Mariko layout to our app:</p>
           <Pre lang="html">{
             /* html */ `
             <!-- main Mariko container (required), add your custom class here -->
@@ -298,7 +298,7 @@ export default function Docs() {
           </p>
           <ul>
             <li>
-              If you have questions about Swiper ask them in{' '}
+              If you have questions about Mariko ask them in{' '}
               <a href="https://stackoverflow.com" target="_blank">
                 StackOverflow
               </a>{' '}

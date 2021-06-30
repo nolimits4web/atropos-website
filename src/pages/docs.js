@@ -209,7 +209,7 @@ export default function Docs() {
 
           <SectionTitle title="Control Elements Offsets" />
           <p>
-            Mariko uses special <code>data-</code> attributes to controll
+            Mariko uses special <code>data-</code> attributes to control
             elements offset (parallax effect):
           </p>
 

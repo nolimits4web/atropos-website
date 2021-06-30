@@ -7,6 +7,7 @@ export const Footer = () => {
           <a
             href="https://github.com/nolimits4web/mariko/blob/master/LICENSE"
             target="_blank"
+            rel="noopener"
             className="text-primary hover:opacity-50"
           >
             MIT
@@ -17,7 +18,7 @@ export const Footer = () => {
         </p>
         <p className="text-center mt-4">
           2021 &copy; Mariko by{' '}
-          <a href="https://nolimits4web.com" target="_blank">
+          <a href="https://nolimits4web.com" target="_blank" rel="noopener">
             <img
               className="w-12 h-12 inline-block"
               src="/images/n4w-logo-white.svg"

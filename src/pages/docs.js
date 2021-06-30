@@ -217,7 +217,7 @@ export default function Docs() {
             <li>
               <p>
                 <code>data-mariko-offset</code> - controls element
-                offset/translate in percetange.
+                offset/translate in percentage.
               </p>
               <div>
                 For example:

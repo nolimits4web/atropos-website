@@ -89,6 +89,34 @@ export default function Home() {
         </p>
       </HomeBlock>
 
+      <HomeBlock>
+        <HomeBlockTitle>Features</HomeBlockTitle>
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8">
+          <div className="p-4 rounded-lg bg-primary bg-opacity-10">
+            <div className="text-xl font-bold mb-4">Touch Friendly</div>
+            <div>
+              Mariko uses pointer events so it perfectly works with both mouse
+              and touch screens at the same time
+            </div>
+          </div>
+          <div className="p-4 rounded-lg bg-primary bg-opacity-10">
+            <div className="text-xl font-bold mb-4">Small</div>
+            <div>Mariko script is just 2KB minified and gzipped</div>
+          </div>
+          <div className="p-4 rounded-lg bg-primary bg-opacity-10">
+            <div className="text-xl font-bold mb-4">Zero Dependencies</div>
+            <div>
+              Yeah, Mariko doesn't depend and doesn't include any third-party
+              scripts
+            </div>
+          </div>
+          <div className="p-4 rounded-lg bg-primary bg-opacity-10">
+            <div className="text-xl font-bold mb-4">Configurable</div>
+            <div>Mariko comes with wide customization possibilities</div>
+          </div>
+        </div>
+      </HomeBlock>
+
       <HomeBlock className="bg-gradient-to-r from-primary to-primary-dark border-t-2 border-b-2 border-primary">
         <HomeBlockTitle>Showcase</HomeBlockTitle>
         <p>Creative and interactive presentation for anything</p>

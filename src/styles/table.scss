@@ -1,0 +1,38 @@
+$prop: #aa0606;
+$type: #056d05;
+$value: #6d4305;
+
+.params-table {
+  th {
+    font-weight: bold;
+  }
+  td:first-child,
+  td:nth-child(2),
+  td:nth-child(3) {
+    @apply font-mono font-medium;
+  }
+  td:first-child {
+    color: #{$prop};
+  }
+  td:nth-child(2) {
+    color: #{$type};
+  }
+  td:nth-child(3) {
+    color: #{$value};
+  }
+}
+.methods-table {
+  th {
+    font-weight: bold;
+  }
+  td:first-child,
+  td:nth-child(2) {
+    @apply font-mono font-medium;
+  }
+  td:first-child {
+    color: #{$prop};
+  }
+  td:nth-child(2) {
+    color: #{$type};
+  }
+}

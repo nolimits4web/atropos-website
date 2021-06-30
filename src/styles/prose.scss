@@ -1,0 +1,14 @@
+.prose a {
+  @apply text-primary hover:no-underline;
+}
+.prose {
+  h1,
+  h2,
+  h3,
+  h4 {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

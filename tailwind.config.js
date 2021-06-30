@@ -6,6 +6,16 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      mono: [
+        'Roboto Mono',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        'courier new',
+        'monospace',
+      ],
+    },
     extend: {
       colors: {
         primary: '#B53DF5',
@@ -18,5 +28,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  // eslint-disable-next-line
+  plugins: [require('@tailwindcss/typography')],
 };

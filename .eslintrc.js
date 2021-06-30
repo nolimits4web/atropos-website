@@ -29,6 +29,7 @@ module.exports = {
     '@next/next/no-img-element': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'react/jsx-no-target-blank': 'off',
+    'react/no-unescaped-entities': 'off',
     'arrow-body-style': 'off',
     camelcase: 'off',
   },

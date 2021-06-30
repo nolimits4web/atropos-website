@@ -1,4 +1,4 @@
-const withTM = require('next-transpile-modules')(['mariko']);
+const withTM = require('next-transpile-modules')(['mariko', 'strip-indent']);
 const marikoPkg = require('mariko/package.json');
 
 module.exports = withTM({

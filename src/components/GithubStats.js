@@ -54,7 +54,7 @@ export const GithubStats = () => {
         <a
           key={label}
           className="text-xs hover:opacity-50 hover:no-underline"
-          href="https://github.com/tailwind-mobile/tailwind-mobile"
+          href="https://github.com/nolimits4web/mariko"
           rel="noopener"
           target="_blank"
         >

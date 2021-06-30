@@ -20,7 +20,9 @@ export const Nav = () => {
             src="/images/logo-text-white.svg"
             alt="Mariko"
           />
-          <span className="text-xs font-bold sm:-mt-4">v1.0.0</span>
+          <span className="text-xs font-bold sm:-mt-4">
+            v{process.env.marikoVersion}
+          </span>
         </div>
       </div>
       <div className="flex items-center space-x-4">

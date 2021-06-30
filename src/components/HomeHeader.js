@@ -10,42 +10,42 @@ export const HomeHeader = () => {
           <img
             className="mariko-header-spacer"
             src="/images/header/mariko-bg.svg"
-            alt=""
+            alt="stars"
           />
           <img
             data-mariko-offset="-4.5"
             src="/images/header/mariko-bg.svg"
-            alt=""
+            alt="stars"
           />
           <img
             data-mariko-offset="-2.5"
             src="/images/header/mariko-mountains.svg"
-            alt=""
+            alt="mountains"
           />
           <img
             data-mariko-offset="0"
             src="/images/header/mariko-forest-back.svg"
-            alt=""
+            alt="forest"
           />
           <img
             data-mariko-offset="2"
             src="/images/header/mariko-forest-mid.svg"
-            alt=""
+            alt="forest"
           />
           <img
             data-mariko-offset="4"
             src="/images/header/mariko-forest-front.svg"
-            alt=""
+            alt="forest"
           />
           <img
             data-mariko-offset="4.5"
             src="/images/header/mariko-logo-en.svg"
-            alt=""
+            alt="mariko logo"
           />
           <img
             data-mariko-offset="5"
             src="/images/header/mariko-logo-jp.svg"
-            alt=""
+            alt="mariko logo"
           />
           <div data-mariko-offset="6" className="mariko-header-button-wrap">
             <Link href="/docs">

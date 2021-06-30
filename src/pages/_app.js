@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
 import '../styles/globals.scss';
-import 'mariko/mariko.css';
 
 function MyApp({ Component, pageProps }) {
   const title = 'Mariko - stunning touch-friendly 3D parallax hover effects';

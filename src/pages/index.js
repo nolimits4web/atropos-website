@@ -26,25 +26,25 @@ const GameBox = ({ bg, logo, studios }) => {
         <img
           className="game-box-size"
           src="/images/game-boxes/box-size.svg"
-          alt=""
+          alt="box bg"
         />
         <img
           className="game-box-bg"
           data-mariko-offset="-4"
           src={`/images/game-boxes/${bg}`}
-          alt=""
+          alt="game cover"
         />
         <img
           className="game-box-logo"
           data-mariko-offset="2.5"
           src={`/images/game-boxes/${logo}`}
-          alt=""
+          alt="game logo"
         />
         <img src="/images/game-boxes/box-ribbon.svg" alt="" />
         <img
           className="game-box-studio"
           src={`/images/game-boxes/${studios}`}
-          alt=""
+          alt="game studio"
         />
       </Mariko>
     </div>

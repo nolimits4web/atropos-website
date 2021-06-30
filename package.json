@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "mariko": "^0.7.1",
+    "mariko": "^0.8.6",
     "next": "11.0.0",
     "next-transpile-modules": "^8.0.0",
     "react": "17.0.2",

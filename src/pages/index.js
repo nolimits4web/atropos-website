@@ -75,17 +75,9 @@ export default function Home() {
           <b className="border-b border-primary">Vue.js</b>
         </p>
         <p className="mt-4 flex items-center space-x-4 justify-center">
-          <img
-            className="h-16"
-            src="/images/home-logos/js.svg"
-            alt="JavaScript"
-          />
-          <img
-            className="h-16"
-            src="/images/home-logos/react.svg"
-            alt="React"
-          />
-          <img className="h-16" src="/images/home-logos/vue.svg" alt="Vue.js" />
+          <img className="h-16" src="/images/logos/js.svg" alt="JavaScript" />
+          <img className="h-16" src="/images/logos/react.svg" alt="React" />
+          <img className="h-16" src="/images/logos/vue.svg" alt="Vue.js" />
         </p>
       </HomeBlock>
 
@@ -100,7 +92,7 @@ export default function Home() {
             </div>
           </div>
           <div className="p-4 rounded-lg bg-primary bg-opacity-10">
-            <div className="text-xl font-bold mb-4">Small</div>
+            <div className="text-xl font-bold mb-4">Lightweight</div>
             <div>Mariko script is just 2KB minified and gzipped</div>
           </div>
           <div className="p-4 rounded-lg bg-primary bg-opacity-10">

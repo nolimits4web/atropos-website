@@ -1,10 +1,16 @@
 import Head from 'next/head';
+import { useGA } from '../shared/use-ga';
 
 import '../styles/globals.scss';
 
-function MyApp({ Component, pageProps }) {
-  const title = 'Mariko - stunning touch-friendly 3D parallax hover effects';
-  const description = '';
+function MyApp({ Component, pageProps, router }) {
+  const title =
+    Component.title ||
+    'Mariko - stunning touch-friendly 3D parallax hover effects';
+  const description =
+    'Mariko is a lightweight, free and open-source JavaScript library to create stunning touch-friendly 3D parallax hover effects.';
+
+  useGA(router);
   return (
     <>
       <Head>

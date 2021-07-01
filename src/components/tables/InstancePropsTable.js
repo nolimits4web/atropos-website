@@ -1,4 +1,4 @@
-export const MethodsTable = () => {
+export const InstancePropsTable = () => {
   return (
     <table className="methods-table">
       <thead>

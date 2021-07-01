@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react';
-import { TitlesContext } from './TitlesContext';
+import { TitlesContext } from '../shared/TitlesContext';
 
 export const SectionTitle = ({ level = '2', title = '' }) => {
   const Component = `h${level}`;

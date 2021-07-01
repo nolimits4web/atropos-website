@@ -29,7 +29,7 @@ export const Styles = () => {
           `}</Pre>
       <p>
         Mariko comes with stylesheets in different formats. The following files
-        are available::
+        are available:
       </p>
       <ul>
         <li>

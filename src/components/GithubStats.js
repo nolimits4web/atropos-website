@@ -40,7 +40,15 @@ export const GithubStats = () => {
   }, []);
   return (
     <div className="inline-flex items-center space-x-2">
-      <GithubIcon className="inline-block" height="20" />
+      <a
+        className="text-xs hover:opacity-50 hover:no-underline"
+        href="https://github.com/nolimits4web/atropos/"
+        rel="noopener"
+        target="_blank"
+      >
+        <GithubIcon className="inline-block" height="20" />
+      </a>
+      {/* 
       {[[data.stars, 'stars']].map(([value, label]) => (
         <a
           key={label}
@@ -53,6 +61,7 @@ export const GithubStats = () => {
           <span>{label}</span>
         </a>
       ))}
+       */}
     </div>
   );
 };

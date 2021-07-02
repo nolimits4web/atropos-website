@@ -27,6 +27,7 @@ async function fetchGitStats(local) {
 }
 
 export const GithubStats = () => {
+  // eslint-disable-next-line
   const [data, setData] = useState({ stars: 0 });
   useEffect(() => {
     const gitStatsDate = localStorage.getItem('atropos-git-stats-date');

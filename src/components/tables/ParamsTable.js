@@ -18,7 +18,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
               <td>el</td>
               <td>HTMLElement | string</td>
               <td />
-              <td>Mariko element</td>
+              <td>Atropos element</td>
             </tr>
           )}
           {framework !== 'core' && (
@@ -26,7 +26,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
               <td>component</td>
               <td>string</td>
               <td>'div'</td>
-              <td>Mariko main component tag</td>
+              <td>Atropos main component tag</td>
             </tr>
           )}
 
@@ -152,7 +152,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                   Extra class name on{' '}
                   <Link href="/docs#html-layout">
                     <a>
-                      <code>mariko-scale</code> element
+                      <code>atropos-scale</code> element
                     </a>
                   </Link>
                 </td>
@@ -167,7 +167,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                   Extra class name on{' '}
                   <Link href="/docs#html-layout">
                     <a>
-                      <code>mariko-rotate</code> element
+                      <code>atropos-rotate</code> element
                     </a>
                   </Link>
                 </td>
@@ -182,7 +182,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                   Extra class name on{' '}
                   <Link href="/docs#html-layout">
                     <a>
-                      <code>mariko-inner</code> element
+                      <code>atropos-inner</code> element
                     </a>
                   </Link>
                 </td>
@@ -199,7 +199,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <td>number</td>
             <td>function</td>
             <td>
-              Callback function will be executed when Mariko activated (on
+              Callback function will be executed when Atropos activated (on
               hover)
             </td>
           </tr>
@@ -208,7 +208,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <td>number</td>
             <td>function</td>
             <td>
-              Callback function will be executed when Mariko deactivated (on
+              Callback function will be executed when Atropos deactivated (on
               pointer out)
             </td>
           </tr>
@@ -236,7 +236,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                   Elements passed here will be added to{' '}
                   <Link href="/docs#html-layout">
                     <a>
-                      <code>mariko</code> root element
+                      <code>atropos</code> root element
                     </a>
                   </Link>
                 </td>
@@ -249,7 +249,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                   Elements passed here will be added to{' '}
                   <Link href="/docs#html-layout">
                     <a>
-                      <code>mariko-scale</code> element
+                      <code>atropos-scale</code> element
                     </a>
                   </Link>
                 </td>
@@ -262,7 +262,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                   Elements passed here will be added to{' '}
                   <Link href="/docs#html-layout">
                     <a>
-                      <code>mariko-rotate</code> root element
+                      <code>atropos-rotate</code> root element
                     </a>
                   </Link>
                 </td>

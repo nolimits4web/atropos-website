@@ -1,10 +1,10 @@
-const withTM = require('next-transpile-modules')(['mariko', 'strip-indent']);
-const marikoPkg = require('mariko/package.json');
+const withTM = require('next-transpile-modules')(['atropos', 'strip-indent']);
+const atroposPkg = require('atropos/package.json');
 
 module.exports = withTM({
   reactStrictMode: true,
   env: {
-    marikoVersion: marikoPkg.version,
-    marikoReleaseDate: marikoPkg.releaseDate,
+    atroposVersion: atroposPkg.version,
+    atroposReleaseDate: atroposPkg.releaseDate,
   },
 });

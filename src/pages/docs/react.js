@@ -22,7 +22,7 @@ export default function DocsReact() {
         <div className="w-full max-w-none prose px-4 md:px-8">
           <FrameworkSwitch inline />
 
-          <h1>Mariko React Documentation</h1>
+          <h1>Atropos React Documentation</h1>
 
           <BrowserCompat />
           <Installation />
@@ -37,4 +37,4 @@ export default function DocsReact() {
     </TitlesContextProvider>
   );
 }
-DocsReact.title = 'Mariko React Documenation';
+DocsReact.title = 'Atropos React Documenation';

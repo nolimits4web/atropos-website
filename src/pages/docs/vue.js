@@ -21,7 +21,7 @@ export default function DocsVue() {
         <DocsNav />
         <div className="w-full max-w-none prose px-4 md:px-8">
           <FrameworkSwitch inline />
-          <h1>Mariko Vue Documentation</h1>
+          <h1>Atropos Vue Documentation</h1>
 
           <BrowserCompat />
           <Installation />
@@ -36,4 +36,4 @@ export default function DocsVue() {
     </TitlesContextProvider>
   );
 }
-DocsVue.title = 'Mariko Vue Documenation';
+DocsVue.title = 'Atropos Vue Documenation';

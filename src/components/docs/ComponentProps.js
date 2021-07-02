@@ -11,12 +11,12 @@ export const ComponentProps = ({ framework = 'react' }) => {
       {framework === 'react' && (
         <Pre lang="jsx">{
           /* jsx */ `
-          import Mariko from 'mariko/react';
+          import Atropos from 'atropos/react';
 
           export default function App () {
             return (
               <div id="app">
-                <Mariko
+                <Atropos
                   activeOffset={40}
                   shadowScale={1.05}
                   onEnter={() => console.log('Enter')}
@@ -24,7 +24,7 @@ export const ComponentProps = ({ framework = 'react' }) => {
                   onRotate={(x, y) => console.log('Rotate', x, y)}
                 >
                   {/* ... */}
-                </Mariko>
+                </Atropos>
               </div>
             )
           }
@@ -37,21 +37,21 @@ export const ComponentProps = ({ framework = 'react' }) => {
           /* html */ `
           <template>
             <div id="app">
-              <mariko>
+              <atropos>
                 :active-offset="40"
                 :shadow-scale="1.05"
                 @enter="onEnter"
                 @leave="onLeave"
                 @rotate="onRotate"
-              </mariko>
+              </atropos>
             </div>
           </template>
           <script>
-            import Mariko from 'mariko/vue';
+            import Atropos from 'atropos/vue';
             
             export default {
               components: {
-                Mariko,
+                Atropos,
               },
               setup() {
                 const onEnter = () => console.log('Enter');

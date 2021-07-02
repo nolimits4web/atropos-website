@@ -1,6 +1,6 @@
 import Link from 'next/link';
 // eslint-disable-next-line
-import { Mariko } from 'mariko/react';
+import { Atropos } from 'atropos/react';
 import { Nav } from '../components/Nav';
 import { HomeHeader } from '../components/HomeHeader';
 import { Footer } from '../components/Footer';
@@ -22,7 +22,7 @@ const HomeBlockTitle = ({ Tag = 'h2', children }) => {
 const GameBox = ({ bg, logo, studios }) => {
   return (
     <div className="w-64 m-6">
-      <Mariko className="game-box">
+      <Atropos className="game-box">
         <img
           className="game-box-size"
           src="/images/game-boxes/box-size.svg"
@@ -30,13 +30,13 @@ const GameBox = ({ bg, logo, studios }) => {
         />
         <img
           className="game-box-bg"
-          data-mariko-offset="-4"
+          data-atropos-offset="-4"
           src={`/images/game-boxes/${bg}`}
           alt="game cover"
         />
         <img
           className="game-box-logo"
-          data-mariko-offset="2.5"
+          data-atropos-offset="2.5"
           src={`/images/game-boxes/${logo}`}
           alt="game logo"
         />
@@ -46,7 +46,7 @@ const GameBox = ({ bg, logo, studios }) => {
           src={`/images/game-boxes/${studios}`}
           alt="game studio"
         />
-      </Mariko>
+      </Atropos>
     </div>
   );
 };
@@ -57,9 +57,9 @@ export default function Home() {
       <Nav />
       <HomeHeader />
       <HomeBlock>
-        <HomeBlockTitle Tag="h1">Mariko</HomeBlockTitle>
+        <HomeBlockTitle Tag="h1">Atropos</HomeBlockTitle>
         <p>
-          <b>Mariko</b> is a{' '}
+          <b>Atropos</b> is a{' '}
           <b className="border-b border-primary">
             lightweight, free and open-source
           </b>{' '}
@@ -87,24 +87,24 @@ export default function Home() {
           <div className="p-4 rounded-lg bg-primary bg-opacity-10">
             <div className="text-xl font-bold mb-4">Touch Friendly</div>
             <div>
-              Mariko uses pointer events so it perfectly works with both mouse
+              Atropos uses pointer events so it perfectly works with both mouse
               and touch screens at the same time
             </div>
           </div>
           <div className="p-4 rounded-lg bg-primary bg-opacity-10">
             <div className="text-xl font-bold mb-4">Lightweight</div>
-            <div>Mariko script is just 2KB minified and gzipped</div>
+            <div>Atropos script is just 2KB minified and gzipped</div>
           </div>
           <div className="p-4 rounded-lg bg-primary bg-opacity-10">
             <div className="text-xl font-bold mb-4">Zero Dependencies</div>
             <div>
-              Yeah, Mariko doesn't depend and doesn't include any third-party
+              Yeah, Atropos doesn't depend and doesn't include any third-party
               scripts
             </div>
           </div>
           <div className="p-4 rounded-lg bg-primary bg-opacity-10">
             <div className="text-xl font-bold mb-4">Configurable</div>
-            <div>Mariko comes with wide customization possibilities</div>
+            <div>Atropos comes with wide customization possibilities</div>
           </div>
         </div>
       </HomeBlock>
@@ -139,7 +139,7 @@ export default function Home() {
       <HomeBlock>
         <HomeBlockTitle>Get Started</HomeBlockTitle>
         <p>
-          <b>Mariko</b> is completely free and open-source (MIT Licensed)
+          <b>Atropos</b> is completely free and open-source (MIT Licensed)
         </p>
         <p className="mt-4">
           <Link href="/docs/">

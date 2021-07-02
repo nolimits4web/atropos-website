@@ -5,8 +5,8 @@ export const Installation = () => {
   return (
     <>
       <SectionTitle title="Installation" />
-      <p>We can install Mariko from NPM</p>
-      <Pre>npm i mariko</Pre>
+      <p>We can install Atropos from NPM</p>
+      <Pre>npm i atropos</Pre>
     </>
   );
 };

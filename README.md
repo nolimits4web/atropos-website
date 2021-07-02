@@ -1,6 +1,6 @@
-# Mariko Website
+# Atropos Website
 
-Mariko website to use these docs offline
+Atropos website to use these docs offline
 
 ## Next.js
 

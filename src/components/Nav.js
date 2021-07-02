@@ -11,7 +11,7 @@ export const Nav = ({ className }) => {
               <img
                 src="/images/logo-white.svg"
                 className="w-10 h-10"
-                alt="Mariko"
+                alt="Atropos"
               />
             </a>
           </Link>
@@ -21,12 +21,12 @@ export const Nav = ({ className }) => {
                 <img
                   className="h-4 mr-2 hidden sm:block"
                   src="/images/logo-text-white.svg"
-                  alt="Mariko"
+                  alt="Atropos"
                 />
               </a>
             </Link>
             <span className="text-xs font-bold sm:-mt-4">
-              v{process.env.marikoVersion}
+              v{process.env.atroposVersion}
             </span>
           </div>
         </div>

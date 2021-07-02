@@ -5,17 +5,17 @@ export const HTMLLayout = () => {
   return (
     <>
       <SectionTitle title="HTML Layout" />
-      <p>Now, we need to add basic Mariko layout to our app:</p>
+      <p>Now, we need to add basic Atropos layout to our app:</p>
       <Pre lang="html">{
         /* html */ `
-        <!-- main Mariko container (required), add your custom class here -->
-        <div class="mariko my-mariko">
+        <!-- main Atropos container (required), add your custom class here -->
+        <div class="atropos my-atropos">
           <!-- scale container (required) -->
-          <div class="mariko-scale">
+          <div class="atropos-scale">
             <!-- rotate container (required) -->
-            <div class="mariko-rotate">
+            <div class="atropos-rotate">
               <!-- inner container (required) -->
-              <div class="mariko-inner">
+              <div class="atropos-inner">
                 <!-- put your custom content here -->
               </div>
             </div>

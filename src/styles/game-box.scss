@@ -2,7 +2,7 @@
   width: 100%;
   aspect-ratio: 526 / 656;
 }
-.game-box .mariko-inner {
+.game-box .atropos-inner {
   z-index: 1;
 }
 .game-box img {
@@ -32,7 +32,7 @@
   top: 0;
   visibility: hidden;
 }
-.game-box .mariko-rotate::before {
+.game-box .atropos-rotate::before {
   content: '';
   position: absolute;
   left: 0;
@@ -44,7 +44,7 @@
   z-index: 1;
 }
 
-.game-box .mariko-shadow {
+.game-box .atropos-shadow {
   opacity: 0.5;
   transform: translate3d(0, 0, -1px);
 }

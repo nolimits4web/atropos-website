@@ -8,16 +8,16 @@ export const ComponentUsage = ({ framework = 'react' }) => {
       {framework === 'react' && (
         <Pre lang="jsx">{
           /* jsx */ `
-          // import Mariko component
-          import Mariko from 'mariko/react';
+          // import Atropos component
+          import Atropos from 'atropos/react';
   
           export default function App () {
             return (
               <div id="app">
-                {/* Mariko */}
-                <Mariko className="my-mariko">
+                {/* Atropos */}
+                <Atropos className="my-atropos">
                   {/* ... */}
-                </Mariko>
+                </Atropos>
               </div>
             )
           }
@@ -29,19 +29,19 @@ export const ComponentUsage = ({ framework = 'react' }) => {
           /* html */ `
           <template>
             <div id="app">
-              <mariko class="my-mariko">
+              <atropos class="my-atropos">
                 <!-- ... -->
-              </mariko>
+              </atropos>
             </div>
           </template>
           <script>
-            // import Mariko component
-            import Mariko from 'mariko/vue';
+            // import Atropos component
+            import Atropos from 'atropos/vue';
 
             export default {
-              // register Mariko component
+              // register Atropos component
               components: {
-                Mariko,
+                Atropos,
               }
             }
           </script>
@@ -50,12 +50,12 @@ export const ComponentUsage = ({ framework = 'react' }) => {
       )}
 
       <p>
-        In addition to Mariko's main CSS styles, we may need to add some custom
-        styles, for example to set Mariko size:
+        In addition to Atropos's main CSS styles, we may need to add some custom
+        styles, for example to set Atropos size:
       </p>
       <Pre lang="css">{
         /* css */ `
-        .my-mariko {
+        .my-atropos {
           width: 320px;
           height: 160px;
         }

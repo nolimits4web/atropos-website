@@ -5,7 +5,8 @@ export const BrowserCompat = () => {
     <>
       <SectionTitle title="Browser Compatibility" />
       <p>
-        Mariko is compatible with browsers which support the following features:
+        Atropos is compatible with browsers which support the following
+        features:
       </p>
       <ul>
         <li>

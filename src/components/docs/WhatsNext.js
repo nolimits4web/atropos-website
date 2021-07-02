@@ -5,18 +5,18 @@ export const WhatsNext = () => {
     <>
       <SectionTitle title="What's next?" />
       <p>
-        As you see it is easy to integrate Mariko into your website or app. So
+        As you see it is easy to integrate Atropos into your website or app. So
         here are your next steps:
       </p>
       <ul>
         <li>
-          If you have questions about Mariko ask them in{' '}
+          If you have questions about Atropos ask them in{' '}
           <a href="https://stackoverflow.com" target="_blank">
             StackOverflow
           </a>{' '}
           or use{' '}
           <a
-            href="https://github.com/nolimits4web/mariko/discussions"
+            href="https://github.com/nolimits4web/atropos/discussions"
             target="_blank"
           >
             GitHub Discussions
@@ -25,7 +25,7 @@ export const WhatsNext = () => {
         <li>
           Create issue on{' '}
           <a
-            href="https://github.com/nolimits4web/mariko/issues/new"
+            href="https://github.com/nolimits4web/atropos/issues/new"
             target="_blank"
           >
             GitHub

@@ -4,42 +4,42 @@ import { SectionTitle } from '../SectionTitle';
 export const Initialize = () => {
   return (
     <>
-      <SectionTitle title="Initialize Mariko" />
-      <p>Now we need to initialize Mariko:</p>
+      <SectionTitle title="Initialize Atropos" />
+      <p>Now we need to initialize Atropos:</p>
       <Pre lang="js">{
         /* javascript */ `
-            // import Mariko library
-            import Mariko from 'mariko';
+            // import Atropos library
+            import Atropos from 'atropos';
 
             // Initialize
-            const myMariko = Mariko({
-              el: '.my-mariko',
+            const myAtropos = Atropos({
+              el: '.my-atropos',
               // rest of parameters
             });
           `
       }</Pre>
       <p>
-        If you use it in environment without ES modules, you can add Mariko
+        If you use it in environment without ES modules, you can add Atropos
         library via <code>{`<script>`}</code> tag:
       </p>
       <Pre lang="html">{
         /* html */ `
-            <script src="path/to/mariko.min.js"></script>
+            <script src="path/to/atropos.min.js"></script>
             <script>
-              const myMariko = Mariko({
-                el: '.my-mariko',
+              const myAtropos = Atropos({
+                el: '.my-atropos',
                 // rest of parameters
               });
             </script>
           `
       }</Pre>
       <p>
-        In addition to Mariko's main CSS styles, we may need to add some custom
-        styles, for example to set Mariko size:
+        In addition to Atropos's main CSS styles, we may need to add some custom
+        styles, for example to set Atropos size:
       </p>
       <Pre lang="css">{
         /* css */ `
-          .my-mariko {
+          .my-atropos {
             width: 320px;
             height: 160px;
           }

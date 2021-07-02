@@ -5,7 +5,7 @@ export const Footer = () => {
         <p className="text-center">
           Code licensed under{' '}
           <a
-            href="https://github.com/nolimits4web/mariko/blob/master/LICENSE"
+            href="https://github.com/nolimits4web/atropos/blob/master/LICENSE"
             target="_blank"
             rel="noopener"
             className="text-primary hover:opacity-50"
@@ -17,7 +17,7 @@ export const Footer = () => {
           owners
         </p>
         <p className="text-center mt-4">
-          2021 &copy; Mariko by{' '}
+          2021 &copy; Atropos by{' '}
           <a href="https://nolimits4web.com" target="_blank" rel="noopener">
             <img
               className="w-12 h-12 inline-block"

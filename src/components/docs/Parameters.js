@@ -9,8 +9,8 @@ export const Parameters = () => {
       <ParamsTable />
       <p>For example:</p>
       <Pre lang="js">{`
-        const myMariko = Mariko({
-          el: '.my-mariko',
+        const myAtropos = Atropos({
+          el: '.my-atropos',
           activeOffset: 40,
           shadowScale: 1.05,
           onEnter() {

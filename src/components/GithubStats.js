@@ -3,7 +3,7 @@ import { GithubIcon } from './GithubIcon';
 
 function getLocalStats() {
   return {
-    stars: localStorage.getItem('mariko-git-stats-stars'),
+    stars: localStorage.getItem('atropos-git-stats-stars'),
   };
 }
 
@@ -11,14 +11,14 @@ async function fetchGitStats(local) {
   if (local) {
     return getLocalStats();
   }
-  const res = await fetch('https://api.github.com/repos/nolimits4web/mariko');
+  const res = await fetch('https://api.github.com/repos/nolimits4web/atropos/');
   const { stargazers_count } = await res.json();
   if (stargazers_count) {
-    localStorage.setItem('mariko-git-stats-date', new Date().getTime());
+    localStorage.setItem('atropos-git-stats-date', new Date().getTime());
   }
   if (stargazers_count) {
     localStorage.setItem(
-      'mariko-git-stats-stars',
+      'atropos-git-stats-stars',
       stargazers_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','),
     );
   }
@@ -29,7 +29,7 @@ async function fetchGitStats(local) {
 export const GithubStats = () => {
   const [data, setData] = useState({ stars: 0 });
   useEffect(() => {
-    const gitStatsDate = localStorage.getItem('mariko-git-stats-date');
+    const gitStatsDate = localStorage.getItem('atropos-git-stats-date');
     const local =
       gitStatsDate && new Date().getTime() - gitStatsDate * 1 < 1000 * 60 * 60;
     fetchGitStats(local).then((res) => {
@@ -45,7 +45,7 @@ export const GithubStats = () => {
         <a
           key={label}
           className="text-xs hover:opacity-50 hover:no-underline"
-          href="https://github.com/nolimits4web/mariko"
+          href="https://github.com/nolimits4web/atropos/"
           rel="noopener"
           target="_blank"
         >

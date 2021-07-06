@@ -11,7 +11,7 @@ async function fetchGitStats(local) {
   if (local) {
     return getLocalStats();
   }
-  const res = await fetch('https://api.github.com/repos/nolimits4web/atropos/');
+  const res = await fetch('https://api.github.com/repos/nolimits4web/atropos');
   const { stargazers_count } = await res.json();
   if (stargazers_count) {
     localStorage.setItem('atropos-git-stats-date', new Date().getTime());
@@ -27,7 +27,6 @@ async function fetchGitStats(local) {
 }
 
 export const GithubStats = () => {
-  // eslint-disable-next-line
   const [data, setData] = useState({ stars: 0 });
   useEffect(() => {
     const gitStatsDate = localStorage.getItem('atropos-git-stats-date');
@@ -49,7 +48,6 @@ export const GithubStats = () => {
       >
         <GithubIcon className="inline-block" height="20" />
       </a>
-      {/* 
       {[[data.stars, 'stars']].map(([value, label]) => (
         <a
           key={label}
@@ -62,7 +60,6 @@ export const GithubStats = () => {
           <span>{label}</span>
         </a>
       ))}
-       */}
     </div>
   );
 };

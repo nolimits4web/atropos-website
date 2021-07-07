@@ -1,23 +1,13 @@
 // eslint-disable-next-line
 import { Atropos } from 'atropos/react';
 
-export const MovieBox = ({ bg, bg2, logo1, logo2, logo3 }) => {
+export const MovieBox = ({ bg, logo1, logo2, logo3 }) => {
   return (
     <div className="w-64 m-6">
       <Atropos className="movie-box">
-        {/* <img
-          className="movie-box-size"
-          src="/images/movies/box-size.svg"
-          alt="box bg"
-        /> */}
         <div className="movie-box-bg" data-atropos-offset="-5">
           <img src={`/images/movies/${bg}`} alt="movie bg" />
         </div>
-        {bg2 && (
-          <div className="movie-box-bg-2" data-atropos-offset="-1.5">
-            <img src={`/images/movies/${bg2}`} alt="movie bg" />
-          </div>
-        )}
 
         <img
           className="movie-box-logo"

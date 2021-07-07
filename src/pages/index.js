@@ -123,7 +123,6 @@ export default function Home() {
           />
           <MovieBox
             bg="spider-bg.jpg"
-            bg2="spider-bg-2.png"
             logo1="spider-logo-1.png"
             logo2="spider-logo-2.png"
             logo3="spider-logo-3.png"

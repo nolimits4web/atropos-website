@@ -1,11 +1,14 @@
-.game-box {
+// Common
+.game-box,
+.movie-box {
   width: 100%;
-  aspect-ratio: 526 / 656;
 }
-.game-box .atropos-inner {
+.game-box .atropos-inner,
+.movie-box .atropos-inner {
   z-index: 1;
 }
-.game-box img {
+.game-box img,
+.movie-box img {
   position: absolute;
   left: 0;
   top: 0;
@@ -17,6 +20,16 @@
   transform-style: preserve-3d;
   pointer-events: none;
   max-width: none;
+}
+.game-box .atropos-shadow,
+.movie-box .atropos-shadow {
+  opacity: 0.5;
+  transform: translate3d(0, 0, -1px);
+}
+
+// Game Box
+.game-box {
+  aspect-ratio: 526 / 656;
 }
 .game-box img.game-box-bg {
   left: -5%;
@@ -44,7 +57,25 @@
   z-index: 1;
 }
 
-.game-box .atropos-shadow {
-  opacity: 0.5;
-  transform: translate3d(0, 0, -1px);
+// Movie Box
+.movie-box {
+  aspect-ratio: 270 / 153;
+}
+
+.movie-box .atropos-inner {
+  border-radius: 12px;
+}
+.movie-box-bg-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  img {
+    transform: scale(1.1);
+  }
+}
+.movie-box .movie-box-bg img {
+  transform: scale(1.1);
+  position: relative;
 }

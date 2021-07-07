@@ -1,8 +1,8 @@
 import Link from 'next/link';
-// eslint-disable-next-line
-import { Atropos } from 'atropos/react';
 import { Nav } from '../components/Nav';
 import { HomeHeader } from '../components/HomeHeader';
+import { GameBox } from '../components/GameBox';
+import { MovieBox } from '../components/MovieBox';
 import { Footer } from '../components/Footer';
 
 const HomeBlock = ({ className = '', children }) => {
@@ -17,38 +17,6 @@ const HomeBlock = ({ className = '', children }) => {
 
 const HomeBlockTitle = ({ Tag = 'h2', children }) => {
   return <Tag className="text-4xl font-bold sm:text-5xl mb-10">{children}</Tag>;
-};
-
-const GameBox = ({ bg, logo, studios }) => {
-  return (
-    <div className="w-64 m-6">
-      <Atropos className="game-box">
-        <img
-          className="game-box-size"
-          src="/images/game-boxes/box-size.svg"
-          alt="box bg"
-        />
-        <img
-          className="game-box-bg"
-          data-atropos-offset="-4"
-          src={`/images/game-boxes/${bg}`}
-          alt="game cover"
-        />
-        <img
-          className="game-box-logo"
-          data-atropos-offset="2.5"
-          src={`/images/game-boxes/${logo}`}
-          alt="game logo"
-        />
-        <img src="/images/game-boxes/box-ribbon.svg" alt="" />
-        <img
-          className="game-box-studio"
-          src={`/images/game-boxes/${studios}`}
-          alt="game studio"
-        />
-      </Atropos>
-    </div>
-  );
 };
 
 export default function Home() {
@@ -132,6 +100,33 @@ export default function Home() {
             bg="re-bg.jpg"
             logo="re-logo.png"
             studios="capcom-logo.svg"
+          />
+        </div>
+
+        <div className="mt-8 flex flex-wrap justify-center">
+          <MovieBox
+            bg="gk-bg.jpg"
+            logo1="gk-logo-1.png"
+            logo2="gk-logo-2.png"
+            logo3="gk-logo-3.png"
+          />
+          <MovieBox
+            bg="ted-lasso-bg.jpg"
+            logo1="ted-lasso-logo-1.png"
+            logo2="ted-lasso-logo-2.png"
+          />
+          <MovieBox
+            bg="mk-bg.jpg"
+            logo1="mk-logo-1.png"
+            logo2="mk-logo-2.png"
+            logo3="mk-logo-3.png"
+          />
+          <MovieBox
+            bg="spider-bg.jpg"
+            bg2="spider-bg-2.png"
+            logo1="spider-logo-1.png"
+            logo2="spider-logo-2.png"
+            logo3="spider-logo-3.png"
           />
         </div>
       </HomeBlock>

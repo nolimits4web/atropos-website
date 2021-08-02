@@ -15,10 +15,10 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="mask-icon" sizes="any" href="/favicon.svg" color="#B53DF5" />
         <title>{title}</title>
         <meta property="og:title" content={title} />
         <meta name="description" content={description} />
-        <meta property="og:title" content="Atropos" />
         <meta property="og:description" content={description} />
         <meta
           property="og:image"

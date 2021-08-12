@@ -1,10 +1,10 @@
-const withTM = require('next-transpile-modules')(['atropos', 'strip-indent']);
 const atroposPkg = require('atropos/package.json');
 
-module.exports = withTM({
+module.exports = {
   reactStrictMode: true,
+  experimental: { esmExternals: true },
   env: {
     atroposVersion: atroposPkg.version,
     atroposReleaseDate: atroposPkg.releaseDate,
   },
-});
+};

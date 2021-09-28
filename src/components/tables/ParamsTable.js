@@ -82,11 +82,24 @@ export const ParamsTable = ({ framework = 'core' }) => {
           </tr>
           <tr>
             <td>rotateTouch</td>
-            <td>boolean</td>
+            <td>boolean | string</td>
             <td>true</td>
             <td>
               Defines whether to rotate container on touch move (when
-              activated), <code>rotate</code> must be enabled
+              activated), <code>rotate</code> must be enabled. Also accepts
+              special values:
+              <ul>
+                <li>
+                  <code>scroll-y</code> - will not rotate container with initial
+                  vertical touch-move (vertical scrolling), basically will not
+                  block page vertical scrolling
+                </li>
+                <li>
+                  <code>scroll-x</code> - will not rotate container with initial
+                  horizontal touch-move (horizontal scrolling), basically will
+                  not block page horizontal scrolling
+                </li>
+              </ul>
             </td>
           </tr>
           <tr>

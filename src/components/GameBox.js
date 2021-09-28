@@ -4,7 +4,7 @@ import { Atropos } from 'atropos/react';
 export const GameBox = ({ bg, logo, studios }) => {
   return (
     <div className="w-64 m-6">
-      <Atropos className="game-box">
+      <Atropos className="game-box" rotateTouch="scroll-y">
         <img
           className="game-box-size"
           src="/images/game-boxes/box-size.svg"

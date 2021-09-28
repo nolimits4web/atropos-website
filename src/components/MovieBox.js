@@ -4,7 +4,7 @@ import { Atropos } from 'atropos/react';
 export const MovieBox = ({ bg, logo1, logo2, logo3 }) => {
   return (
     <div className="w-64 m-6">
-      <Atropos className="movie-box">
+      <Atropos className="movie-box" rotateTouch="scroll-y">
         <div className="movie-box-bg" data-atropos-offset="-5">
           <img src={`/images/movies/${bg}`} alt="movie bg" />
         </div>

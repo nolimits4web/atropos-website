@@ -6,7 +6,11 @@ export const HomeHeader = () => {
   return (
     <div className="bg-gradient-to-b from-primary to-primary-dark -mt-16 border-b-2 border-primary">
       <div className="max-w-screen-lg mx-auto pt-32 pb-16 px-4 md:px-8 lg:px-16">
-        <Atropos className="atropos-header w-full" highlight={false}>
+        <Atropos
+          className="atropos-header w-full"
+          rotateTouch="scroll-y"
+          highlight={false}
+        >
           <img
             className="atropos-header-spacer"
             src="/images/header/atropos-bg.svg"

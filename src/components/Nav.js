@@ -9,8 +9,8 @@ export const Nav = ({ className }) => {
           <Link href="/">
             <a>
               <img
-                src="/images/logo-white.svg"
-                className="w-10 h-10"
+                src="/images/logo-inner.svg"
+                className="w-16 h-16"
                 alt="Atropos"
               />
             </a>

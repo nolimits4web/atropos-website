@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="mask-icon" sizes="any" href="/favicon.svg" color="#B53DF5" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <title>{title}</title>
         <meta property="og:title" content={title} />
         <meta name="description" content={description} />

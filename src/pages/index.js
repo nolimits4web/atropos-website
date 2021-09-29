@@ -143,6 +143,54 @@ export default function Home() {
           </Link>
         </p>
       </HomeBlock>
+
+      <HomeBlock>
+        <HomeBlockTitle>More Of Our Projects</HomeBlockTitle>
+
+        <div className="sm:flex items-stretch max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-8 sm:text-center gr">
+          {[
+            {
+              url: 'https://framework7.io',
+              title: 'Framework7',
+              description:
+                'Full featured framework for building iOS, Android & desktop apps',
+              logo: 'framework7.svg',
+            },
+            {
+              url: 'https://swiperjs.com',
+              title: 'Swiper',
+              description: 'Most modern mobile touch slider',
+              logo: 'swiper.svg',
+            },
+            {
+              url: 'https://tailwind-mobile.com',
+              title: 'Tailwind Mobile',
+              description:
+                'Pixel perfect mobile UI components built with Tailwind CSS',
+              logo: 'tailwind-mobile.svg',
+            },
+          ].map((item) => (
+            <a
+              className="flex sm:flex-col items-center w-full border-white border-opacity-10 border rounded-xl px-4 py-6 duration-200 hover:shadow-lg sm:hover:shadow-2xl hover:border-opacity-0 hover:bg-primary hover:bg-opacity-5 hover:scale-[1.05]"
+              href={item.url}
+              target="_blank"
+              key={item.title}
+            >
+              <img
+                className="w-12 sm:w-32 sm:h-32 mr-4 sm:mr-0"
+                src={`/images/projects/${item.logo}`}
+                alt={item.title}
+              />
+              <div>
+                <div className="font-semibold sm:mt-4 sm:mb-2">
+                  {item.title}
+                </div>
+                <div className="text-sm opacity-75">{item.description}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </HomeBlock>
       <Footer />
     </div>
   );

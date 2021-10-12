@@ -39,13 +39,15 @@ export default function Home() {
         </p>
         <p className="mt-4">
           Available for <b className="border-b border-primary">JavaScript</b>,{' '}
-          <b className="border-b border-primary">React</b> and{' '}
-          <b className="border-b border-primary">Vue.js</b>
+          <b className="border-b border-primary">React</b>,{' '}
+          <b className="border-b border-primary">Vue.js</b> and{' '}
+          <b className="border-b border-primary">Svelte</b>
         </p>
         <p className="mt-4 flex items-center space-x-4 justify-center">
           <img className="h-16" src="/images/logos/js.svg" alt="JavaScript" />
           <img className="h-16" src="/images/logos/react.svg" alt="React" />
           <img className="h-16" src="/images/logos/vue.svg" alt="Vue.js" />
+          <img className="h-16" src="/images/logos/svelte.svg" alt="Svelte" />
         </p>
       </HomeBlock>
 

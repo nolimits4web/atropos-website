@@ -48,6 +48,21 @@ export const ComponentUsage = ({ framework = 'react' }) => {
         `
         }</Pre>
       )}
+      {framework === 'svelte' && (
+        <Pre lang="html">{
+          /* html */ `
+          <script>
+            // import Atropos component
+            import Atropos from 'atropos/svelte';
+          </script>
+          <div id="app">
+            <Atropos class="my-atropos">
+              <!-- ... -->
+            </Atropos>
+          </div>
+        `
+        }</Pre>
+      )}
 
       <p>
         In addition to Atropos's main CSS styles, we may need to add some custom

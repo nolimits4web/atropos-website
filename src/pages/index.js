@@ -147,7 +147,7 @@ export default function Home() {
       <HomeBlock>
         <HomeBlockTitle>More Of Our Projects</HomeBlockTitle>
 
-        <div className="sm:flex items-stretch max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-8 sm:text-center gr">
+        <div className="sm:flex items-stretch max-w-3xl mx-auto space-y-4 text-left sm:space-y-0 sm:space-x-8 sm:text-center gr">
           {[
             {
               url: 'https://framework7.io',

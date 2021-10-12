@@ -68,6 +68,26 @@ export const ComponentProps = ({ framework = 'react' }) => {
         `
         }</Pre>
       )}
+      {framework === 'svelte' && (
+        <Pre lang="jsx">{
+          /* html */ `
+          <script>
+            import Atropos from 'atropos/svelte';
+          </script>
+          <div id="app">
+            <Atropos
+              activeOffset={40}
+              shadowScale={1.05}
+              on:enter={() => console.log('Enter')}
+              on:leave={() => console.log('Leave')}
+              on:rotate={(e) => console.log('Rotate', e.detail.x, e.detail.y)}
+            >
+              ...
+            </Atropos>
+          </div>
+        `
+        }</Pre>
+      )}
     </>
   );
 };

@@ -7,6 +7,7 @@ export const FrameworkSwitch = ({ inline }) => {
     { href: '/docs', icon: '/images/logos/js.svg', title: 'JavaScript' },
     { href: '/docs/react', icon: '/images/logos/react.svg', title: 'React' },
     { href: '/docs/vue', icon: '/images/logos/vue.svg', title: 'Vue' },
+    { href: '/docs/svelte', icon: '/images/logos/svelte.svg', title: 'Svelte' },
   ];
   const isActive = (link) => link.href === router.asPath;
   return (

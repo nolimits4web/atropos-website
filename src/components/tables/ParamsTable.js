@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
 export const ParamsTable = ({ framework = 'core' }) => {
+  const hasEvents = framework === 'vue' || framework === 'svelte';
+  const hasSlots = framework === 'vue' || framework === 'svelte';
   return (
     <>
       <table className="params-table">
@@ -21,7 +23,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
               <td>Atropos element</td>
             </tr>
           )}
-          {framework !== 'core' && (
+          {framework !== 'core' && framework !== 'svelte' && (
             <tr>
               <td>component</td>
               <td>string</td>
@@ -202,39 +204,40 @@ export const ParamsTable = ({ framework = 'core' }) => {
               </tr>
             </>
           )}
-          {framework === 'vue' && (
+          {hasEvents && (
             <tr>
               <th colSpan="4">Events</th>
             </tr>
           )}
           <tr>
-            <td>{framework !== 'vue' ? 'onEnter' : 'enter'}</td>
-            <td>number</td>
+            <td>{!hasEvents ? 'onEnter' : 'enter'}</td>
             <td>function</td>
+            <td />
             <td>
-              Callback function will be executed when Atropos activated (on
-              hover)
+              {hasEvents ? 'Event' : 'Callback function'} will be fired when
+              Atropos activated (on hover)
             </td>
           </tr>
           <tr>
-            <td>{framework !== 'vue' ? 'onLeave' : 'leave'}</td>
-            <td>number</td>
+            <td>{!hasEvents ? 'onLeave' : 'leave'}</td>
             <td>function</td>
+            <td />
             <td>
-              Callback function will be executed when Atropos deactivated (on
-              pointer out)
+              {hasEvents ? 'Event' : 'Callback function'} will be fired when
+              Atropos deactivated (on pointer out)
             </td>
           </tr>
           <tr>
-            <td>{framework !== 'vue' ? 'onRotate' : 'rotate'}</td>
-            <td>number</td>
+            <td>{!hasEvents ? 'onRotate' : 'rotate'}</td>
             <td>function(x, y)</td>
+            <td />
             <td>
-              Callback function will be executed on rotate. As arguments accepts{' '}
-              <code>x</code> and <code>y</code> rotation angles
+              {hasEvents ? 'Event' : 'Callback function'} will be fired on
+              rotate. As arguments accepts <code>x</code> and <code>y</code>{' '}
+              rotation angles
             </td>
           </tr>
-          {framework === 'vue' && (
+          {hasSlots && (
             <tr>
               <th colSpan="4">Slots</th>
             </tr>
@@ -242,7 +245,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
           {framework !== 'core' && (
             <>
               <tr>
-                <td>{framework === 'vue' ? 'root' : 'rootChildren'}</td>
+                <td>{hasSlots ? 'root' : 'rootChildren'}</td>
                 <td />
                 <td />
                 <td>
@@ -255,7 +258,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 </td>
               </tr>
               <tr>
-                <td>{framework === 'vue' ? 'scale' : 'scaleChildren'}</td>
+                <td>{hasSlots ? 'scale' : 'scaleChildren'}</td>
                 <td />
                 <td />
                 <td>
@@ -268,7 +271,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 </td>
               </tr>
               <tr>
-                <td>{framework === 'vue' ? 'rotate' : 'rotateChildren'}</td>
+                <td>{hasSlots ? 'rotate' : 'rotateChildren'}</td>
                 <td />
                 <td />
                 <td>

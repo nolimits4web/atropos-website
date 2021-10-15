@@ -12,6 +12,7 @@ export const MultipleAtropos = (props) => {
             // eslint-disable-next-line
             key={index}
             eventsEl=".atropos-multiple"
+            rotateTouch="scroll-y"
             rotateXMax={30}
             rotateYMax={30}
             shadowOffset={100}

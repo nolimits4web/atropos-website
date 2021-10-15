@@ -29,6 +29,8 @@
 
 // Game Box
 .game-box {
+  --side-color: #004297;
+  --side-size: 32px;
   aspect-ratio: 526 / 656;
 }
 .game-box img.game-box-bg {
@@ -53,8 +55,63 @@
   height: calc(100% + 16px);
   top: -8px;
   background: #086ef4;
-  border-radius: 8px;
+  // border-radius: 8px;
   z-index: 1;
+}
+
+.game-box-t {
+  width: calc(100% + 8px);
+  height: var(--side-size);
+  background: var(--side-color);
+  position: absolute;
+  z-index: 10000;
+  left: 0;
+  top: -8px;
+  transform: rotateX(-90deg);
+  transform-origin: center top;
+}
+.game-box-b {
+  width: calc(100% + 8px);
+  height: var(--side-size);
+  background: var(--side-color);
+  position: absolute;
+  z-index: 10000;
+  left: 0;
+  bottom: -8px;
+  transform: rotateX(90deg);
+  transform-origin: center bottom;
+}
+.game-box-r {
+  width: var(--side-size);
+  height: calc(100% + 16px);
+  background: var(--side-color);
+  position: absolute;
+  z-index: 10000;
+  right: -8px;
+  top: -8px;
+  transform: rotateY(-90deg);
+  transform-origin: right center;
+}
+.game-box-l {
+  width: var(--side-size);
+  height: calc(100% + 16px);
+  background: var(--side-color);
+  position: absolute;
+  z-index: 10000;
+  left: 0px;
+  top: -8px;
+  transform: rotateY(90deg);
+  transform-origin: left center;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10.4%;
+    background: #a5a5a5;
+    left: 0;
+    top: 9px;
+  }
 }
 
 // Movie Box

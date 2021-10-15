@@ -58,49 +58,49 @@
   // border-radius: 8px;
   z-index: 1;
 }
-
+.game-box-t,
+.game-box-r,
+.game-box-b,
+.game-box-l {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  // display: none;
+}
 .game-box-t {
   width: calc(100% + 8px);
   height: var(--side-size);
   background: var(--side-color);
-  position: absolute;
-  z-index: 10000;
   left: 0;
   top: -8px;
-  transform: rotateX(-90deg);
+  transform: translate3d(0, 0, -32px) rotateX(90deg);
   transform-origin: center top;
 }
 .game-box-b {
   width: calc(100% + 8px);
   height: var(--side-size);
   background: var(--side-color);
-  position: absolute;
-  z-index: 10000;
   left: 0;
   bottom: -8px;
-  transform: rotateX(90deg);
+  transform: translate3d(0, 0, -32px) rotateX(-90deg);
   transform-origin: center bottom;
 }
 .game-box-r {
   width: var(--side-size);
   height: calc(100% + 16px);
   background: var(--side-color);
-  position: absolute;
-  z-index: 10000;
   right: -8px;
   top: -8px;
-  transform: rotateY(-90deg);
+  transform: translate3d(0, 0, -32px) rotateY(90deg);
   transform-origin: right center;
 }
 .game-box-l {
   width: var(--side-size);
   height: calc(100% + 16px);
   background: var(--side-color);
-  position: absolute;
-  z-index: 10000;
   left: 0px;
   top: -8px;
-  transform: rotateY(90deg);
+  transform: translate3d(0, 0, -32px) rotateY(-90deg);
   transform-origin: left center;
   overflow: hidden;
   &::before {
@@ -125,4 +125,56 @@
 .movie-box .movie-box-bg img {
   transform: scale(1.1);
   position: relative;
+}
+
+// Multiple Atropos
+
+.atropos-multiple {
+  --cell-width: 100px;
+  --cell-height: 62.5px;
+  --cell-gap: 4px;
+  @media (min-width: 640px) {
+    --cell-width: 160px;
+    --cell-height: 100px;
+    --cell-gap: 8px;
+  }
+  @media (min-width: 768px) {
+    --cell-width: 200px;
+    --cell-height: 125px;
+    --cell-gap: 12px;
+  }
+
+  @media (min-width: 1024px) {
+    --cell-width: 240px;
+    --cell-height: 150px;
+    --cell-gap: 12px;
+  }
+  @media (min-width: 1140px) {
+    --cell-width: 320px;
+    --cell-height: 200px;
+    --cell-gap: 16px;
+  }
+  width: calc(var(--cell-width) * 3 + var(--cell-gap) * 6);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  .atropos {
+    width: var(--cell-width);
+    height: var(--cell-height);
+    margin: var(--cell-gap);
+  }
+  .atropos-multiple-bg {
+    display: flex;
+    width: 120%;
+    height: 120%;
+    background-image: url(/images/demos/justice-league.jpg);
+    background-size: 283% 333%;
+
+    position: absolute;
+    left: -10%;
+    top: -10%;
+  }
 }

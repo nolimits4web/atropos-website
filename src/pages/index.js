@@ -4,6 +4,7 @@ import { HomeHeader } from '../components/HomeHeader';
 import { GameBox } from '../components/GameBox';
 import { MovieBox } from '../components/MovieBox';
 import { Footer } from '../components/Footer';
+import { MultipleAtropos } from '../components/MultipleAtropos';
 
 const HomeBlock = ({ className = '', children }) => {
   return (
@@ -129,6 +130,9 @@ export default function Home() {
             logo2="spider-logo-2.png"
             logo3="spider-logo-3.png"
           />
+        </div>
+        <div className="mt-8">
+          <MultipleAtropos />
         </div>
       </HomeBlock>
 

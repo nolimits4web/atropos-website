@@ -129,6 +129,28 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <td>Inverts rotation along the Y-axis (in deg)</td>
           </tr>
           <tr>
+            <td>stretchX</td>
+            <td>number</td>
+            <td>0</td>
+            <td>
+              Move (translate) atropos container along the X-axis on this value
+              (in percentage). E.g. `50` value will move container +-50% of its
+              width. Only for multiple Atropos, when `eventsEl` is parent
+              Atropos container
+            </td>
+          </tr>
+          <tr>
+            <td>stretchY</td>
+            <td>number</td>
+            <td>15</td>
+            <td>
+              Move (translate) atropos container along the Y-axis on this value
+              (in percentage). E.g. `50` value will move container +-50% of its
+              height. Only for multiple Atropos, when `eventsEl` is parent
+              Atropos container
+            </td>
+          </tr>
+          <tr>
             <td>shadow</td>
             <td>boolean</td>
             <td>true</td>

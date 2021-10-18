@@ -128,7 +128,6 @@
 }
 
 // Multiple Atropos
-
 .atropos-multiple {
   --cell-width: 100px;
   --cell-height: 62.5px;
@@ -161,10 +160,16 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  perspective: 1200px;
   .atropos {
     width: var(--cell-width);
     height: var(--cell-height);
     margin: var(--cell-gap);
+    perspective: none;
+    transform-style: preserve-3d;
+  }
+  .atropos-active .atropos-shadow {
+    opacity: 0.5 !important;
   }
   .atropos-multiple-bg {
     display: flex;

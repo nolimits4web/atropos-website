@@ -51,26 +51,18 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>durationEnter</td>
+            <td>alwaysActive</td>
+            <td>boolean</td>
+            <td>false</td>
+            <td>Enables Atropos to be always active</td>
+          </tr>
+          <tr>
+            <td>duration</td>
             <td>number</td>
             <td>300</td>
-            <td>Transition duration when activated (on hover) (in ms)</td>
-          </tr>
-          <tr>
-            <td>durationLeave</td>
-            <td>number</td>
-            <td>600</td>
             <td>
-              Transition duration when deactivated (on pointer out) (in ms)
-            </td>
-          </tr>
-          <tr>
-            <td>rotateLock</td>
-            <td>boolean</td>
-            <td>true</td>
-            <td>
-              When enabled, it won't rotate the container until pointer move out
-              from originally entered quarter
+              Transition duration when activated, leave and and during rotate
+              (in ms)
             </td>
           </tr>
           <tr>
@@ -135,19 +127,41 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <td>
               Move (translate) atropos container along the X-axis on this value
               (in percentage). E.g. `50` value will move container +-50% of its
-              width. Only for multiple Atropos, when `eventsEl` is parent
-              Atropos container
+              width. Only for multiple Atropos, when multiple Atropos uses same
+              parent `eventsEl` container
             </td>
           </tr>
           <tr>
             <td>stretchY</td>
             <td>number</td>
-            <td>15</td>
+            <td>0</td>
             <td>
               Move (translate) atropos container along the Y-axis on this value
               (in percentage). E.g. `50` value will move container +-50% of its
-              height. Only for multiple Atropos, when `eventsEl` is parent
-              Atropos container
+              height. Only for multiple Atropos, when multiple Atropos uses same
+              parent `eventsEl` container
+            </td>
+          </tr>
+          <tr>
+            <td>stretchZ</td>
+            <td>number</td>
+            <td>0</td>
+            <td>
+              Move (translate) atropos container along the Z-axis on this value
+              (in percentage). E.g. `50` value will move container +-50% of its
+              height. Only for multiple Atropos, when multiple Atropos uses same
+              parent `eventsEl` container
+            </td>
+          </tr>
+          <tr>
+            <td>commonOrigin</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>
+              Will dynamically set `transform-origin` for all Atropos components
+              with same parent to same point (usually pointer position). Only
+              for multiple Atropos, when multiple Atropos uses same parent
+              `eventsEl` container
             </td>
           </tr>
           <tr>

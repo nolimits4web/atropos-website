@@ -131,6 +131,12 @@ export default function Home() {
             logo3="spider-logo-3.png"
           />
         </div>
+      </HomeBlock>
+      <HomeBlock className=" bg-[#2c1e37] border-b-2 border-primary">
+        <HomeBlockTitle>Multiple Atropos Components</HomeBlockTitle>
+        <p>
+          Multiple Atropos components working together with common perspective
+        </p>
         <div className="mt-8">
           <MultipleAtropos />
         </div>

@@ -175,11 +175,11 @@ export default function Home() {
               logo: 'swiper.svg',
             },
             {
-              url: 'https://tailwind-mobile.com',
-              title: 'Tailwind Mobile',
+              url: 'https://konstaui.com',
+              title: 'Konsta UI',
               description:
                 'Pixel perfect mobile UI components built with Tailwind CSS',
-              logo: 'tailwind-mobile.svg',
+              logo: 'konsta.svg',
             },
           ].map((item) => (
             <a

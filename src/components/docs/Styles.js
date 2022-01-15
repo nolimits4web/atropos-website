@@ -1,32 +1,44 @@
 import { Pre } from '../Pre';
 import { SectionTitle } from '../SectionTitle';
 
-export const Styles = () => {
+export const Styles = ({ framework = null }) => {
   return (
     <>
       <SectionTitle title="Styles" />
       <p>First we need to include Atropos stylesheet:</p>
-      <Pre lang="html">{`
+      {framework === 'angular' ? (
+        <>
+          <Pre lang="scss">{`
+          // app.component.scss
+
+          @import 'atropos/scss'
+          `}</Pre>
+        </>
+      ) : (
+        <>
+          <Pre lang="html">{`
           <link rel="stylesheet" href="path/to/atropos.css" />
           `}</Pre>
-      <p>
-        With bundler (like webpack) you can import styles directly from
-        JavaScript:
-      </p>
-      <Pre lang="js">{`
+          <p>
+            With bundler (like webpack) you can import styles directly from
+            JavaScript:
+          </p>
+          <Pre lang="js">{`
           // main.js
 
           import 'atropos/css'
           `}</Pre>
-      <p>
-        If you use SCSS preprocessor you can import Atropos's styles from SCSS
-        in the following way:
-      </p>
-      <Pre lang="scss">{`
+          <p>
+            If you use SCSS preprocessor you can import Atropos's styles from
+            SCSS in the following way:
+          </p>
+          <Pre lang="scss">{`
           // main.scss
 
           @import 'atropos/scss'
           `}</Pre>
+        </>
+      )}
       <p>
         Atropos comes with stylesheets in different formats. The following files
         are available:

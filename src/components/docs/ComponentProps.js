@@ -88,6 +88,40 @@ export const ComponentProps = ({ framework = 'react' }) => {
         `
         }</Pre>
       )}
+
+      {framework === 'angular' && (
+        <Pre lang="ts">{
+          /* ts */ `
+          import { Component } from '@angular/core';
+
+          import { AtroposOptions } from 'atropos/atropos';
+          
+          @Component({
+            selector: 'app-root',
+            template: \`
+                <Atropos 
+                  [activeOffset]="40"
+                  [shadowScale]="1.05"
+                  (onEnter)="onEnter($event)"
+                  (onLeave)="onLeave($event)"
+                  (onRotate)="onRotate($event)"
+                </Atropos>
+                \`,
+          })
+          export class AppComponent {
+            onEnter(){
+              console.log('Enter');
+            }
+            onLeave(){
+              console.log('Leave');
+            }
+            onRotate([x,y]: Parameters<AtroposOptions['onRotate']>){
+              console.log('Rotate', x, y);
+            }
+          }
+        `
+        }</Pre>
+      )}
     </>
   );
 };

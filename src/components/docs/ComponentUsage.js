@@ -63,6 +63,31 @@ export const ComponentUsage = ({ framework = 'react' }) => {
         `
         }</Pre>
       )}
+      {framework === 'angular' && (
+        <Pre lang="ts">{
+          /* ts */ `
+          import { Component } from '@angular/core';
+          
+          import { AtroposOptions } from 'atropos/atropos';
+  
+          @Component({
+            selector: 'app-root',
+            template: \`
+                <Atropos class="my-atropos">
+                </Atropos>
+                \`,
+            styles: [\`
+              .my-atropos {
+                width: 320px;
+                height: 160px;
+              }
+            \`]
+          })
+          export class AppComponent {
+          }
+        `
+        }</Pre>
+      )}
 
       <p>
         In addition to Atropos's main CSS styles, we may need to add some custom

@@ -17,7 +17,7 @@ export const Footer = () => {
           owners
         </p>
         <p className="text-center mt-4">
-          2021 &copy; Atropos by{' '}
+          2022 &copy; Atropos by{' '}
           <a href="https://nolimits4web.com" target="_blank" rel="noopener">
             <img
               className="w-12 h-12 inline-block"

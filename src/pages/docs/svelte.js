@@ -13,7 +13,7 @@ import { WhatsNext } from '../../components/docs/WhatsNext';
 import { FrameworkSwitch } from '../../components/FrameworkSwitch';
 import { TitlesContextProvider } from '../../components/TitlesContextProvider';
 
-export default function DocsVue() {
+export default function DocsSvelte() {
   return (
     <TitlesContextProvider>
       <Nav className="bg-primary" />
@@ -36,4 +36,4 @@ export default function DocsVue() {
     </TitlesContextProvider>
   );
 }
-DocsVue.title = 'Atropos Vue Documenation';
+DocsSvelte.title = 'Atropos Svelte Documentation';

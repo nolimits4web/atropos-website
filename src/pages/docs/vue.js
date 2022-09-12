@@ -36,4 +36,4 @@ export default function DocsVue() {
     </TitlesContextProvider>
   );
 }
-DocsVue.title = 'Atropos Vue Documenation';
+DocsVue.title = 'Atropos Vue Documentation';

@@ -37,4 +37,4 @@ export default function DocsReact() {
     </TitlesContextProvider>
   );
 }
-DocsReact.title = 'Atropos React Documenation';
+DocsReact.title = 'Atropos React Documentation';

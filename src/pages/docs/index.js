@@ -40,4 +40,4 @@ export default function Docs() {
     </TitlesContextProvider>
   );
 }
-Docs.title = 'Atropos Documenation';
+Docs.title = 'Atropos Documentation';

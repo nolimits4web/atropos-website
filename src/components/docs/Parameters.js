@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { Pre } from '../Pre';
 import { SectionTitle } from '../SectionTitle';
 import { ParamsTable } from '../tables/ParamsTable';

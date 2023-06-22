@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { Pre } from '../Pre';
 import { SectionTitle } from '../SectionTitle';
 import { ParamsTable } from '../tables/ParamsTable';
@@ -85,6 +86,25 @@ export const ComponentProps = ({ framework = 'react' }) => {
               ...
             </Atropos>
           </div>
+        `
+        }</Pre>
+      )}
+      {framework === 'element' && (
+        <Pre lang="html">{
+          /* html */ `
+          <script>
+            import AtroposComponent from 'atropos/element';
+            customElements.define('atropos-component', AtroposComponent);
+          </script>
+          <div class="my-atropos">
+            <atropos-component>
+              data-active-offset="40"
+              data-shadow-scale="1.05"
+              onEnter="console.log('Enter')"
+              onLeave="console.log('Leave')"
+              onRotate="console.log('Rotate', event.x, event.y)"
+            </atropos-component>
+          </div> 
         `
         }</Pre>
       )}

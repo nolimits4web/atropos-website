@@ -1,6 +1,9 @@
-import Highlight, { defaultProps } from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/dracula';
+/* eslint-disable react/function-component-definition */
+import {Highlight, themes} from 'prism-react-renderer';
+// eslint-disable-next-line import/no-unresolved
+// import theme from 'prism-react-renderer/themes/dracula';
 import stripIndent from 'strip-indent';
+
 
 const removeIndent = (code = '') => {
   return stripIndent(code).trim();
@@ -9,8 +12,7 @@ const removeIndent = (code = '') => {
 export const Pre = ({ children, lang }) => {
   return (
     <Highlight
-      {...defaultProps}
-      theme={theme}
+      theme={themes.dracula}
       code={removeIndent(children)}
       language={lang}
     >
@@ -28,3 +30,4 @@ export const Pre = ({ children, lang }) => {
     </Highlight>
   );
 };
+

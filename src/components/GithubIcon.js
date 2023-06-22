@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 export const GithubIcon = (props) => {
   const { children, ...attrs } = props;
   return (

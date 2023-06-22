@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 export const Footer = () => {
   return (
     <div className="bg-footer-bg border-t-2 border-primary border-opacity-50 text-white">

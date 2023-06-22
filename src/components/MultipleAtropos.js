@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import Atropos from 'atropos/react';
 
 export const MultipleAtropos = (props) => {

@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 // eslint-disable-next-line
 import { Atropos } from 'atropos/react';
 

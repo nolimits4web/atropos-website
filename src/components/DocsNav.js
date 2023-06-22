@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { TitlesContext } from '../shared/TitlesContext';
 import { FrameworkSwitch } from './FrameworkSwitch';
 
-export const DocsNav = () => {
+export function DocsNav() {
   const { titles } = useContext(TitlesContext);
   return (
     <div className="w-80 px-4 md:px-8 hidden lg:block">
@@ -23,4 +23,4 @@ export const DocsNav = () => {
       </div>
     </div>
   );
-};
+}

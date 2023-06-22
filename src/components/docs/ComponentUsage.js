@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { Pre } from '../Pre';
 import { SectionTitle } from '../SectionTitle';
 
@@ -60,6 +61,23 @@ export const ComponentUsage = ({ framework = 'react' }) => {
               <!-- ... -->
             </Atropos>
           </div>
+        `
+        }</Pre>
+      )}
+      {framework === 'element' && (
+        <Pre lang="html">{
+          /* html */ `
+          <script>
+            // import Atropos component
+            import AtroposComponent from 'atropos/element';
+            // register Atropos component
+            customElements.define('atropos-component', AtroposComponent);
+          </script>
+          <div class="my-atropos">
+            <atropos-component>
+              <!-- ... -->
+            </atropos-component>
+          </div> 
         `
         }</Pre>
       )}

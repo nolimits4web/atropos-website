@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -8,6 +9,7 @@ export const FrameworkSwitch = ({ inline }) => {
     { href: '/docs/react', icon: '/images/logos/react.svg', title: 'React' },
     { href: '/docs/vue', icon: '/images/logos/vue.svg', title: 'Vue' },
     { href: '/docs/svelte', icon: '/images/logos/svelte.svg', title: 'Svelte' },
+    { href: '/docs/element', icon: '/images/logos/svelte.svg', title: 'Element' },
   ];
   const isActive = (link) => link.href === router.asPath;
   return (
@@ -17,17 +19,15 @@ export const FrameworkSwitch = ({ inline }) => {
       }`}
     >
       {links.map((link) => (
-        <Link href={link.href} key={link.href}>
-          <a
-            className={`p-2 w-full flex justify-center items-center duration-100 ${
-              isActive(link)
-                ? 'bg-primary'
-                : 'hover:bg-primary hover:bg-opacity-10'
-            }`}
-            title={link.title}
-          >
+        <Link href={link.href} key={link.href} passHref className={`p-2 w-full flex justify-center items-center duration-100 ${
+          isActive(link)
+            ? 'bg-primary'
+            : 'hover:bg-primary hover:bg-opacity-10'
+        }`}
+        title={link.title}>
+         
             <img className="w-6 h-6 !m-0" src={link.icon} alt={link.title} />
-          </a>
+
         </Link>
       ))}
     </div>

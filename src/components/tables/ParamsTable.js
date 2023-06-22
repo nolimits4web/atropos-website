@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-useless-fragment */
+/* eslint-disable react/function-component-definition */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import Link from 'next/link';
 
 export const ParamsTable = ({ framework = 'core' }) => {
@@ -19,7 +22,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <tr>
               <td>el</td>
               <td>HTMLElement | string</td>
-              <td />
+              <td/>
               <td>Atropos element</td>
             </tr>
           )}
@@ -201,10 +204,10 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td />
                 <td>
                   Extra class name on{' '}
-                  <Link href="/docs#html-layout">
-                    <a>
+                  <Link href="/docs#html-layout" passHref>
+                   
                       <code>atropos-scale</code> element
-                    </a>
+                    
                   </Link>
                 </td>
               </tr>
@@ -216,10 +219,10 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td />
                 <td>
                   Extra class name on{' '}
-                  <Link href="/docs#html-layout">
-                    <a>
+                  <Link href="/docs#html-layout" passHref>
+                    
                       <code>atropos-rotate</code> element
-                    </a>
+                    
                   </Link>
                 </td>
               </tr>
@@ -231,10 +234,10 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td />
                 <td>
                   Extra class name on{' '}
-                  <Link href="/docs#html-layout">
-                    <a>
+                  <Link href="/docs#html-layout" passHref>
+                    
                       <code>atropos-inner</code> element
-                    </a>
+                    
                   </Link>
                 </td>
               </tr>
@@ -286,10 +289,10 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td />
                 <td>
                   Elements passed here will be added to{' '}
-                  <Link href="/docs#html-layout">
-                    <a>
+                  <Link href="/docs#html-layout" passHref>
+                    
                       <code>atropos</code> root element
-                    </a>
+                    
                   </Link>
                 </td>
               </tr>
@@ -299,10 +302,10 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td />
                 <td>
                   Elements passed here will be added to{' '}
-                  <Link href="/docs#html-layout">
-                    <a>
+                  <Link href="/docs#html-layout" passHref>
+                    
                       <code>atropos-scale</code> element
-                    </a>
+                    
                   </Link>
                 </td>
               </tr>
@@ -312,10 +315,10 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td />
                 <td>
                   Elements passed here will be added to{' '}
-                  <Link href="/docs#html-layout">
-                    <a>
+                  <Link href="/docs#html-layout" passHref>
+                    
                       <code>atropos-rotate</code> root element
-                    </a>
+                    
                   </Link>
                 </td>
               </tr>

@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { useContext, useEffect } from 'react';
 import { TitlesContext } from '../shared/TitlesContext';
 
@@ -9,6 +10,7 @@ export const SectionTitle = ({ level = '2', title = '' }) => {
     .toLowerCase();
   const titles = useContext(TitlesContext);
   useEffect(() => {
+    // eslint-disable-next-line react/destructuring-assignment
     titles.addTitle({ slug, title });
   });
   return (

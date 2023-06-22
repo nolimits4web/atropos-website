@@ -9,28 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.1",
+    "@tailwindcss/typography": "^0.5.9",
     "atropos": "^1.0.2",
-    "next": "11.1.0",
-    "prism-react-renderer": "^1.2.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "13.4.7",
+    "prism-react-renderer": "^2.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "sass": "^1.37.5",
     "strip-indent": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "11.1.0",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "13.4.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^3.3.2"
   }
 }

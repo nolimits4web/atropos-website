@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 export const InstancePropsTable = () => {
   return (
     <table className="methods-table">

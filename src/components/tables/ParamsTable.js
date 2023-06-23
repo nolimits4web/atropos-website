@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const ParamsTable = ({ framework = 'core' }) => {
   const hasEvents = framework === 'vue' || framework === 'svelte';
-  const hasSlots = framework === 'vue' || framework === 'svelte';
+  const hasSlots = framework === 'vue' || framework === 'svelte' || framework === 'element';
   return (
     <>
       <table className="params-table">
@@ -18,15 +18,15 @@ export const ParamsTable = ({ framework = 'core' }) => {
           </tr>
         </thead>
         <tbody>
-          {framework === 'core' && (
+          {(framework === 'core' || framework === 'element') && (
             <tr>
               <td>el</td>
               <td>HTMLElement | string</td>
-              <td/>
+              <td> {framework === 'element' ? 'div' : ''} </td>
               <td>Atropos element</td>
             </tr>
           )}
-          {framework !== 'core' && framework !== 'svelte' && (
+          {framework !== 'core' && framework !== 'svelte' && framework !== 'element' && (
             <tr>
               <td>component</td>
               <td>string</td>
@@ -34,8 +34,8 @@ export const ParamsTable = ({ framework = 'core' }) => {
               <td>Atropos main component tag</td>
             </tr>
           )}
-
-          <tr>
+          {framework !== 'element' && (
+            <tr>
             <td>eventsEl</td>
             <td>HTMLElement | string</td>
             <td />
@@ -44,8 +44,9 @@ export const ParamsTable = ({ framework = 'core' }) => {
               attached to main container (<code>el</code>)
             </td>
           </tr>
+          )}
           <tr>
-            <td>activeOffset</td>
+            <td> {framework === 'element' ? 'active-offset' : 'activeOffset'}</td>
             <td>number</td>
             <td>50</td>
             <td>
@@ -54,7 +55,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>alwaysActive</td>
+            <td>{framework === 'element' ? 'always-active' : 'alwaysActive'}</td>
             <td>boolean</td>
             <td>false</td>
             <td>Enables Atropos to be always active</td>
@@ -78,7 +79,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>rotateTouch</td>
+            <td>{framework === 'element' ? 'rotate-touch' : 'rotateTouch'}</td>
             <td>boolean | string</td>
             <td>true</td>
             <td>
@@ -100,31 +101,31 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>rotateXMax</td>
+            <td>{framework === 'element' ? 'rotate-x-max' : 'rotateXMax'}</td>
             <td>number</td>
             <td>15</td>
             <td>Max rotation along the X-axis (in deg)</td>
           </tr>
           <tr>
-            <td>rotateYMax</td>
+            <td>{framework === 'element' ? 'rotate-y-max' : 'rotateYMax'}</td>
             <td>number</td>
             <td>15</td>
             <td>Max rotation along the Y-axis (in deg)</td>
           </tr>
           <tr>
-            <td>rotateXInvert</td>
+            <td>{framework === 'element' ? 'rotate-x-invert' : 'rotateXInvert'}</td>
             <td>boolean</td>
             <td>false</td>
             <td>Inverts rotation along the X-axis (in deg)</td>
           </tr>
           <tr>
-            <td>rotateYInvert</td>
+            <td>{framework === 'element' ? 'rotate-y-invert' : 'rotateYInvert'}</td>
             <td>boolean</td>
             <td>false</td>
             <td>Inverts rotation along the Y-axis (in deg)</td>
           </tr>
           <tr>
-            <td>stretchX</td>
+            <td>{framework === 'element' ? 'stretch-x' : 'stretchX'}</td>
             <td>number</td>
             <td>0</td>
             <td>
@@ -135,7 +136,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>stretchY</td>
+            <td>{framework === 'element' ? 'stretch-y' : 'stretchY'}</td>
             <td>number</td>
             <td>0</td>
             <td>
@@ -146,7 +147,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>stretchZ</td>
+            <td>{framework === 'element' ? 'stretch-z' : 'stretchZ'}</td>
             <td>number</td>
             <td>0</td>
             <td>
@@ -157,7 +158,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>commonOrigin</td>
+            <td>{framework === 'element' ? 'common-origin' : 'commonOrigin'}</td>
             <td>boolean</td>
             <td>true</td>
             <td>
@@ -174,7 +175,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <td>Enables shadow</td>
           </tr>
           <tr>
-            <td>shadowOffset</td>
+            <td>{framework === 'element' ? 'shadow-offset' : 'shadowOffset'}</td>
             <td>number</td>
             <td>50</td>
             <td>
@@ -183,7 +184,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             </td>
           </tr>
           <tr>
-            <td>shadowScale</td>
+            <td>{framework === 'element' ? 'shadow-scale' : 'shadowScale'}</td>
             <td>number</td>
             <td>1</td>
             <td>Shadow scale factor</td>
@@ -194,7 +195,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
             <td>true</td>
             <td>Enables highlight</td>
           </tr>
-          {framework !== 'core' && (
+          {framework !== 'core' && framework !== 'element' && (
             <>
               <tr>
                 <td>
@@ -243,7 +244,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
               </tr>
             </>
           )}
-          {hasEvents && (
+          {(hasEvents || framework === 'element') && (
             <tr>
               <th colSpan="4">Events</th>
             </tr>

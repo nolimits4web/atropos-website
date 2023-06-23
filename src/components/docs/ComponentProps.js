@@ -6,7 +6,7 @@ import { ParamsTable } from '../tables/ParamsTable';
 export const ComponentProps = ({ framework = 'react' }) => {
   return (
     <>
-      <SectionTitle title="Component Props" />
+      <SectionTitle title={framework === 'element' ? 'Component Attributes' : 'Component Props'} />
       <ParamsTable framework={framework} />
       <p>For example:</p>
       {framework === 'react' && (
@@ -86,25 +86,6 @@ export const ComponentProps = ({ framework = 'react' }) => {
               ...
             </Atropos>
           </div>
-        `
-        }</Pre>
-      )}
-      {framework === 'element' && (
-        <Pre lang="html">{
-          /* html */ `
-          <script>
-            import AtroposComponent from 'atropos/element';
-            customElements.define('atropos-component', AtroposComponent);
-          </script>
-          <div class="my-atropos">
-            <atropos-component>
-              data-active-offset="40"
-              data-shadow-scale="1.05"
-              onEnter="console.log('Enter')"
-              onLeave="console.log('Leave')"
-              onRotate="console.log('Rotate', event.x, event.y)"
-            </atropos-component>
-          </div> 
         `
         }</Pre>
       )}

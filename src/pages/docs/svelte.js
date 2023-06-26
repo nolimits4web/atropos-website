@@ -1,15 +1,8 @@
+import Link from 'next/link';
 import { Nav } from '../../components/Nav';
 import { Footer } from '../../components/Footer';
 
 import { DocsNav } from '../../components/DocsNav';
-
-import { BrowserCompat } from '../../components/docs/BrowserCompat';
-import { Installation } from '../../components/docs/Installation';
-import { Styles } from '../../components/docs/Styles';
-import { ComponentUsage } from '../../components/docs/ComponentUsage';
-import { ComponentProps } from '../../components/docs/ComponentProps';
-import { ControlElementsOffsets } from '../../components/docs/ControlElementsOffsets';
-import { WhatsNext } from '../../components/docs/WhatsNext';
 import { FrameworkSwitch } from '../../components/FrameworkSwitch';
 import { TitlesContextProvider } from '../../components/TitlesContextProvider';
 
@@ -23,13 +16,12 @@ export default function DocsSvelte() {
           <FrameworkSwitch inline />
           <h1>Atropos Svelte Documentation</h1>
 
-          <BrowserCompat />
-          <Installation />
-          <Styles />
-          <ComponentUsage framework="svelte" />
-          <ComponentProps framework="svelte" />
-          <ControlElementsOffsets framework="svelte" />
-          <WhatsNext />
+          <div  style={{ minHeight: '100vh' }}>
+            <p>
+              The Atropos Svelte component was removed in Atropos v2 in favor of the{' '}
+              <Link href="/docs/element">Atropos Web Component</Link>, which is now recommended to be used instead.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

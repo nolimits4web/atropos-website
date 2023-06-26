@@ -1,4 +1,3 @@
-/* eslint-disable react/function-component-definition */
 import { Pre } from '../Pre';
 import { SectionTitle } from '../SectionTitle';
 
@@ -24,7 +23,7 @@ export const ElementStyles = () => {
         </li>
       </ul>
       <p>Here's an example of how you can write CSS rules to style the inner part of the atropos-component:</p>
-      <Pre lang="html">{`
+      <Pre lang="css">{`
           atropos-component::part(inner) {
             /* Your styles for the inner part */
           }

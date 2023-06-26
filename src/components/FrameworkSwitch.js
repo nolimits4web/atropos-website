@@ -1,4 +1,3 @@
-/* eslint-disable react/function-component-definition */
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -19,7 +18,7 @@ export const FrameworkSwitch = ({ inline }) => {
       }`}
     >
       {links.map((link) => (
-        <Link href={link.href} key={link.href} passHref className={`p-2 w-full flex justify-center items-center duration-100 ${
+        <Link href={link.href} key={link.href} className={`p-2 w-full flex justify-center items-center duration-100 ${
           isActive(link)
             ? 'bg-primary'
             : 'hover:bg-primary hover:bg-opacity-10'

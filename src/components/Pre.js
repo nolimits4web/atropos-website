@@ -1,6 +1,4 @@
-/* eslint-disable react/function-component-definition */
 import { Highlight, themes } from 'prism-react-renderer';
-// eslint-disable-next-line import/no-unresolved
 import stripIndent from 'strip-indent';
 
 const removeIndent = (code = '') => {

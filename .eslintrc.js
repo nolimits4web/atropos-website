@@ -31,6 +31,7 @@ module.exports = {
     'react/jsx-no-target-blank': 'off',
     'react/no-unescaped-entities': 'off',
     'arrow-body-style': 'off',
+    "react/function-component-definition": "off",
     camelcase: 'off',
   },
 };

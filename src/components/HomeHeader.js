@@ -1,5 +1,3 @@
-/* eslint-disable react/function-component-definition */
-// eslint-disable-next-line
 import { Atropos } from 'atropos/react';
 import Link from 'next/link';
 
@@ -48,10 +46,8 @@ export const HomeHeader = () => {
             alt="atropos logo"
           />
           <div data-atropos-offset="6" className="atropos-header-button-wrap">
-            <Link href="/docs" passHref className="bg-primary text-white rounded-full px-4 py-2 md:px-8 md:py-4 font-bold md:text-xl inline-flex hover:bg-opacity-70 duration-200 translate-y-full">
-              
+            <Link href="/docs" className="bg-primary text-white rounded-full px-4 py-2 md:px-8 md:py-4 font-bold md:text-xl inline-flex hover:bg-opacity-70 duration-200 translate-y-full">
                 Get Started
-              
             </Link>
           </div>
         </Atropos>

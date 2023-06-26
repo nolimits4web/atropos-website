@@ -1,4 +1,3 @@
-/* eslint-disable react/function-component-definition */
 import { useContext, useEffect } from 'react';
 import { TitlesContext } from '../shared/TitlesContext';
 

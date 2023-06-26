@@ -1,4 +1,3 @@
-/* eslint-disable react/function-component-definition */
 import { useState } from 'react';
 import { TitlesContext } from '../shared/TitlesContext';
 

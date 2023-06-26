@@ -1,5 +1,3 @@
-/* eslint-disable react/function-component-definition */
-// eslint-disable-next-line
 import { Atropos } from 'atropos/react';
 
 export const MovieBox = ({ bg, logo1, logo2, logo3 }) => {

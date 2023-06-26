@@ -89,6 +89,32 @@ export const ComponentProps = ({ framework = 'react' }) => {
         `
         }</Pre>
       )}
+      {framework === 'element' && (
+        <Pre lang="html">{
+          /* html */ `
+          <script>
+            import AtroposComponent from 'atropos/element';
+            customElements.define('atropos-component', AtroposComponent);
+          </script>
+          <atropos-component class="my-atropos"
+            active-offset="40"
+            shadow-scale="1.05"
+          >
+          </atropos-component>
+          <script>
+            const atroposComponent = document.querySelector('.my-atropos');
+            atroposComponent.addEventListener('enter', function() {
+              console.log('Enter');
+            });
+            atroposComponent.addEventListener('leave', function() {
+              console.log('Leave');
+            });
+            atroposComponent.addEventListener('rotate', function(event) {
+              console.log('Rotate', event.detail);
+          </script>
+        `
+        }</Pre>
+      )}
     </>
   );
 };

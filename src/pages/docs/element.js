@@ -5,13 +5,14 @@ import { DocsNav } from '../../components/DocsNav';
 
 import { BrowserCompat } from '../../components/docs/BrowserCompat';
 import { Installation } from '../../components/docs/Installation';
-import { Styles } from '../../components/docs/Styles';
+import { ElementStyles } from '../../components/docs/ElementStyles';
 import { ComponentUsage } from '../../components/docs/ComponentUsage';
 import { ComponentProps } from '../../components/docs/ComponentProps';
 import { ControlElementsOffsets } from '../../components/docs/ControlElementsOffsets';
 import { WhatsNext } from '../../components/docs/WhatsNext';
 import { FrameworkSwitch } from '../../components/FrameworkSwitch';
 import { TitlesContextProvider } from '../../components/TitlesContextProvider';
+import { GetInstance } from '../../components/docs/GetInstance';
 
 
 export default function DocsElement() {
@@ -26,9 +27,10 @@ export default function DocsElement() {
 
             <BrowserCompat />
             <Installation />
-            <Styles />
+            <ElementStyles />
             <ComponentUsage framework="element"/>
             <ComponentProps framework="element"/>
+            <GetInstance />
             <ControlElementsOffsets framework="element" />
             <WhatsNext />
         </div>

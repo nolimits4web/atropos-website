@@ -73,11 +73,9 @@ export const ComponentUsage = ({ framework = 'react' }) => {
             // register Atropos component
             customElements.define('atropos-component', AtroposComponent);
           </script>
-          <div class="my-atropos">
-            <atropos-component>
+          <atropos-component class="my-atropos">
               <!-- ... -->
-            </atropos-component>
-          </div> 
+          </atropos-component>
         `
         }</Pre>
       )}

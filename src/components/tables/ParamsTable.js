@@ -4,7 +4,7 @@
 import Link from 'next/link';
 
 export const ParamsTable = ({ framework = 'core' }) => {
-  const hasEvents = framework === 'vue' || framework === 'svelte';
+  const hasEvents = framework === 'vue' || framework === 'svelte' || framework === 'element';
   const hasSlots = framework === 'vue' || framework === 'svelte' || framework === 'element';
   return (
     <>
@@ -36,14 +36,14 @@ export const ParamsTable = ({ framework = 'core' }) => {
           )}
           {framework !== 'element' && (
             <tr>
-            <td>eventsEl</td>
-            <td>HTMLElement | string</td>
-            <td />
-            <td>
-              Pointer events target. If not specified event handlers will be
-              attached to main container (<code>el</code>)
-            </td>
-          </tr>
+              <td>eventsEl</td>
+              <td>HTMLElement | string</td>
+              <td />
+              <td>
+                Pointer events target. If not specified event handlers will be
+                attached to main container (<code>el</code>)
+              </td>
+            </tr>
           )}
           <tr>
             <td> {framework === 'element' ? 'active-offset' : 'activeOffset'}</td>
@@ -206,9 +206,9 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td>
                   Extra class name on{' '}
                   <Link href="/docs#html-layout" passHref>
-                   
-                      <code>atropos-scale</code> element
-                    
+
+                    <code>atropos-scale</code> element
+
                   </Link>
                 </td>
               </tr>
@@ -221,9 +221,9 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td>
                   Extra class name on{' '}
                   <Link href="/docs#html-layout" passHref>
-                    
-                      <code>atropos-rotate</code> element
-                    
+
+                    <code>atropos-rotate</code> element
+
                   </Link>
                 </td>
               </tr>
@@ -236,47 +236,48 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td>
                   Extra class name on{' '}
                   <Link href="/docs#html-layout" passHref>
-                    
-                      <code>atropos-inner</code> element
-                    
+
+                    <code>atropos-inner</code> element
+
                   </Link>
                 </td>
               </tr>
             </>
           )}
-          {(hasEvents || framework === 'element') && (
+          {hasEvents && (
             <tr>
               <th colSpan="4">Events</th>
             </tr>
           )}
-          <tr>
-            <td>{!hasEvents ? 'onEnter' : 'enter'}</td>
-            <td>function</td>
-            <td />
-            <td>
-              {hasEvents ? 'Event' : 'Callback function'} will be fired when
-              Atropos activated (on hover)
-            </td>
-          </tr>
-          <tr>
-            <td>{!hasEvents ? 'onLeave' : 'leave'}</td>
-            <td>function</td>
-            <td />
-            <td>
-              {hasEvents ? 'Event' : 'Callback function'} will be fired when
-              Atropos deactivated (on pointer out)
-            </td>
-          </tr>
-          <tr>
-            <td>{!hasEvents ? 'onRotate' : 'rotate'}</td>
-            <td>function(x, y)</td>
-            <td />
-            <td>
-              {hasEvents ? 'Event' : 'Callback function'} will be fired on
-              rotate. As arguments accepts <code>x</code> and <code>y</code>{' '}
-              rotation angles
-            </td>
-          </tr>
+              <tr>
+                <td>{!hasEvents ? 'onEnter' : 'enter'}</td>
+                <td>function</td>
+                <td />
+                <td>
+                  {hasEvents ? 'Event' : 'Callback function'} will be fired when
+                  Atropos activated (on hover)
+                </td>
+              </tr>
+              <tr>
+                <td>{!hasEvents ? 'onLeave' : 'leave'}</td>
+                <td>function</td>
+                <td />
+                <td>
+                  {hasEvents ? 'Event' : 'Callback function'} will be fired when
+                  Atropos deactivated (on pointer out)
+                </td>
+              </tr>
+              <tr>
+                <td>{!hasEvents ? 'onRotate' : 'rotate'}</td>
+                <td>{framework === 'element' ? 'function(event)' : 'function(x, y)'}</td>
+                <td />
+                <td>
+                  {hasEvents ? 'Event' : 'Callback function'} will be fired on
+                  rotate. {framework === 'element' ? '' : <span>As arguments accepts <code>x</code> and <code>y</code> rotation angles</span>}
+
+
+                </td>
+              </tr>
           {hasSlots && (
             <tr>
               <th colSpan="4">Slots</th>
@@ -291,9 +292,9 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td>
                   Elements passed here will be added to{' '}
                   <Link href="/docs#html-layout" passHref>
-                    
-                      <code>atropos</code> root element
-                    
+
+                    <code>atropos</code> root element
+
                   </Link>
                 </td>
               </tr>
@@ -304,9 +305,9 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td>
                   Elements passed here will be added to{' '}
                   <Link href="/docs#html-layout" passHref>
-                    
-                      <code>atropos-scale</code> element
-                    
+
+                    <code>atropos-scale</code> element
+
                   </Link>
                 </td>
               </tr>
@@ -317,9 +318,9 @@ export const ParamsTable = ({ framework = 'core' }) => {
                 <td>
                   Elements passed here will be added to{' '}
                   <Link href="/docs#html-layout" passHref>
-                    
-                      <code>atropos-rotate</code> root element
-                    
+
+                    <code>atropos-rotate</code> root element
+
                   </Link>
                 </td>
               </tr>

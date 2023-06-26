@@ -3,8 +3,8 @@
 import Link from 'next/link';
 
 export const ParamsTable = ({ framework = 'core' }) => {
-  const hasEvents = framework === 'vue' || framework === 'svelte' || framework === 'element';
-  const hasSlots = framework === 'vue' || framework === 'svelte' || framework === 'element';
+  const hasEvents = framework === 'element';
+  const hasSlots = framework === 'element';
   return (
     <>
       <table className="params-table">
@@ -25,7 +25,7 @@ export const ParamsTable = ({ framework = 'core' }) => {
               <td>Atropos element</td>
             </tr>
           )}
-          {framework !== 'core' && framework !== 'svelte' && framework !== 'element' && (
+          {framework !== 'core' && framework !== 'element' && (
             <tr>
               <td>component</td>
               <td>string</td>

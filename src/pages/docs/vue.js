@@ -19,7 +19,7 @@ export default function DocsVue() {
 
           <div  style={{ minHeight: '100vh' }}>
             <p>
-              The Atropos Svelte component was removed in Atropos v2 in favor of the{' '}
+              The Atropos Vue component was removed in Atropos v2 in favor of the{' '}
               <Link href="/docs/element">Atropos Web Component</Link>, which is now recommended to be used instead.
             </p>
           </div>

@@ -10,6 +10,7 @@ export const TitlesContextProvider = ({ children }) => {
     setTitles([...titles]);
   };
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <TitlesContext.Provider value={{ titles, addTitle }}>
       {children}
     </TitlesContext.Provider>

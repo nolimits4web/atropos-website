@@ -9,6 +9,7 @@ export const SectionTitle = ({ level = '2', title = '' }) => {
     .toLowerCase();
   const titles = useContext(TitlesContext);
   useEffect(() => {
+    // eslint-disable-next-line react/destructuring-assignment
     titles.addTitle({ slug, title });
   });
   return (

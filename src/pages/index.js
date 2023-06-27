@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import Link from 'next/link';
 import { Nav } from '../components/Nav';
 import { HomeHeader } from '../components/HomeHeader';
@@ -40,15 +41,13 @@ export default function Home() {
         </p>
         <p className="mt-4">
           Available for <b className="border-b border-primary">JavaScript</b>,{' '}
-          <b className="border-b border-primary">React</b>,{' '}
-          <b className="border-b border-primary">Vue.js</b> and{' '}
-          <b className="border-b border-primary">Svelte</b>
+          <b className="border-b border-primary">React</b> and as{' '}
+          <b className="border-b border-primary">WebComponent</b> (for use with Angular, Vue, Svelte, Solid and other frameworks)
         </p>
         <p className="mt-4 flex items-center space-x-4 justify-center">
           <img className="h-16" src="/images/logos/js.svg" alt="JavaScript" />
           <img className="h-16" src="/images/logos/react.svg" alt="React" />
-          <img className="h-16" src="/images/logos/vue.svg" alt="Vue.js" />
-          <img className="h-16" src="/images/logos/svelte.svg" alt="Svelte" />
+          <img className="h-16" src="/images/logos/webcomponents.svg" alt="Element" />
         </p>
       </HomeBlock>
 
@@ -148,10 +147,8 @@ export default function Home() {
           <b>Atropos</b> is completely free and open-source (MIT Licensed)
         </p>
         <p className="mt-4">
-          <Link href="/docs/">
-            <a className="bg-primary text-white rounded-full px-8 py-4 font-bold text-xl inline-flex hover:bg-opacity-70 duration-200">
+          <Link href="/docs/" className="bg-primary text-white rounded-full px-8 py-4 font-bold text-xl inline-flex hover:bg-opacity-70 duration-200">
               Get Started
-            </a>
           </Link>
         </p>
       </HomeBlock>

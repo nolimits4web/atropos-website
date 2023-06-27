@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { Atropos } from 'atropos/react';
 
 export const GameBox = ({ bg, logo, studios }) => {

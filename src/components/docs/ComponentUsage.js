@@ -24,42 +24,18 @@ export const ComponentUsage = ({ framework = 'react' }) => {
         `
         }</Pre>
       )}
-      {framework === 'vue' && (
-        <Pre lang="html">{
-          /* html */ `
-          <template>
-            <div id="app">
-              <atropos class="my-atropos">
-                <!-- ... -->
-              </atropos>
-            </div>
-          </template>
-          <script>
-            // import Atropos component
-            import Atropos from 'atropos/vue';
-
-            export default {
-              // register Atropos component
-              components: {
-                Atropos,
-              }
-            }
-          </script>
-        `
-        }</Pre>
-      )}
-      {framework === 'svelte' && (
+      {framework === 'element' && (
         <Pre lang="html">{
           /* html */ `
           <script>
             // import Atropos component
-            import Atropos from 'atropos/svelte';
+            import AtroposComponent from 'atropos/element';
+            // register Atropos component
+            customElements.define('atropos-component', AtroposComponent);
           </script>
-          <div id="app">
-            <Atropos class="my-atropos">
+          <atropos-component class="my-atropos">
               <!-- ... -->
-            </Atropos>
-          </div>
+          </atropos-component>
         `
         }</Pre>
       )}

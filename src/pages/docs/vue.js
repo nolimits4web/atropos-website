@@ -1,15 +1,9 @@
+import Link from 'next/link';
 import { Nav } from '../../components/Nav';
 import { Footer } from '../../components/Footer';
 
 import { DocsNav } from '../../components/DocsNav';
 
-import { BrowserCompat } from '../../components/docs/BrowserCompat';
-import { Installation } from '../../components/docs/Installation';
-import { Styles } from '../../components/docs/Styles';
-import { ComponentUsage } from '../../components/docs/ComponentUsage';
-import { ComponentProps } from '../../components/docs/ComponentProps';
-import { ControlElementsOffsets } from '../../components/docs/ControlElementsOffsets';
-import { WhatsNext } from '../../components/docs/WhatsNext';
 import { FrameworkSwitch } from '../../components/FrameworkSwitch';
 import { TitlesContextProvider } from '../../components/TitlesContextProvider';
 
@@ -23,13 +17,12 @@ export default function DocsVue() {
           <FrameworkSwitch inline />
           <h1>Atropos Vue Documentation</h1>
 
-          <BrowserCompat />
-          <Installation />
-          <Styles />
-          <ComponentUsage framework="vue" />
-          <ComponentProps framework="vue" />
-          <ControlElementsOffsets framework="vue" />
-          <WhatsNext />
+          <div  style={{ minHeight: '100vh' }}>
+            <p>
+              The Atropos Vue component was removed in Atropos v2 in favor of the{' '}
+              <Link href="/docs/element">Atropos Web Component</Link>, which is now recommended to be used instead.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

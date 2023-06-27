@@ -34,6 +34,18 @@ export const Initialize = () => {
           `
       }</Pre>
       <p>
+        If you use modules directly in browser, then it can be imported from
+        CDN:
+      </p>
+      <Pre lang="js">{`
+          import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs';
+          
+          const myAtropos = Atropos({
+            el: '.my-atropos',
+            // rest of parameters
+          });
+      `}</Pre>
+      <p>
         In addition to Atropos's main CSS styles, we may need to add some custom
         styles, for example to set Atropos size:
       </p>

@@ -42,12 +42,17 @@ export default function Home() {
         <p className="mt-4">
           Available for <b className="border-b border-primary">JavaScript</b>,{' '}
           <b className="border-b border-primary">React</b> and as{' '}
-          <b className="border-b border-primary">WebComponent</b> (for use with Angular, Vue, Svelte, Solid and other frameworks)
+          <b className="border-b border-primary">WebComponent</b> (for use with
+          Angular, Vue, Svelte, Solid and other frameworks)
         </p>
         <p className="mt-4 flex items-center space-x-4 justify-center">
           <img className="h-16" src="/images/logos/js.svg" alt="JavaScript" />
           <img className="h-16" src="/images/logos/react.svg" alt="React" />
-          <img className="h-16" src="/images/logos/webcomponents.svg" alt="Element" />
+          <img
+            className="h-16"
+            src="/images/logos/webcomponents.svg"
+            alt="Element"
+          />
         </p>
       </HomeBlock>
 
@@ -147,8 +152,11 @@ export default function Home() {
           <b>Atropos</b> is completely free and open-source (MIT Licensed)
         </p>
         <p className="mt-4">
-          <Link href="/docs/" className="bg-primary text-white rounded-full px-8 py-4 font-bold text-xl inline-flex hover:bg-opacity-70 duration-200">
-              Get Started
+          <Link
+            href="/docs/"
+            className="bg-primary text-white rounded-full px-8 py-4 font-bold text-xl inline-flex hover:bg-opacity-70 duration-200"
+          >
+            Get Started
           </Link>
         </p>
       </HomeBlock>
@@ -156,8 +164,14 @@ export default function Home() {
       <HomeBlock>
         <HomeBlockTitle>More Of Our Projects</HomeBlockTitle>
 
-        <div className="sm:flex items-stretch max-w-3xl mx-auto space-y-4 text-left sm:space-y-0 sm:space-x-8 sm:text-center gr">
+        <div className="mx-auto flex max-w-5xl flex-col items-stretch gap-4 text-left sm:grid sm:grid-cols-2 sm:gap-8 sm:text-center md:grid-cols-4">
           {[
+            {
+              url: 'https://t0ggles.com',
+              title: 't0ggles',
+              description: 'Your ultimate multiple projects management tool',
+              logo: 't0ggles.svg',
+            },
             {
               url: 'https://framework7.io',
               title: 'Framework7',

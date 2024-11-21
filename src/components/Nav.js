@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { GithubStats } from './GithubStats';
-import TogglesRibbon from './TogglesRibbon';
+import BlackFridayRibbon from './BlackFridayRibbon';
 
 export const Nav = ({ className }) => {
   return (
     <>
-      <TogglesRibbon />
+      <BlackFridayRibbon />
       <div className={className || ''}>
         <div className="h-16 flex items-center justify-between max-w-screen-xl mx-auto px-4 md:px-8 z-10 relative text-white">
           <div className="flex items-center space-x-2 sm:space-x-4">

@@ -6,6 +6,8 @@ import { GameBox } from '../components/GameBox';
 import { MovieBox } from '../components/MovieBox';
 import { Footer } from '../components/Footer';
 import { MultipleAtropos } from '../components/MultipleAtropos';
+import { SponsorsIntro } from '../components/SponsorsIntro';
+import { HomeSponsors } from '../components/HomeSponsors';
 
 const HomeBlock = ({ className = '', children }) => {
   return (
@@ -247,6 +249,12 @@ export default function Home() {
             </a>
           ))}
         </div>
+      </HomeBlock>
+
+      <HomeBlock>
+        <HomeBlockTitle>Sponsors</HomeBlockTitle>
+        <SponsorsIntro />
+        <HomeSponsors />
       </HomeBlock>
       <Footer />
     </div>

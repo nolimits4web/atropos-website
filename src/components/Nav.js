@@ -31,6 +31,9 @@ export const Nav = ({ className }) => {
             <span className="sm:hidden">Docs</span>
             <span className="hidden sm:block">Documentation</span>
           </Link>
+          <Link href="/sponsors/" className="font-medium hover:opacity-50">
+            Sponsors
+          </Link>
           <GithubStats />
         </div>
       </div>

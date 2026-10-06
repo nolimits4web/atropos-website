@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run build-sponsors && next dev",
+    "build": "npm run build-sponsors && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-sponsors": "node scripts/build-sponsors.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",

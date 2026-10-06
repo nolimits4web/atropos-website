@@ -1,12 +1,14 @@
 import { useContext } from 'react';
 import { TitlesContext } from '../shared/TitlesContext';
 import { FrameworkSwitch } from './FrameworkSwitch';
+import { SidebarSponsors } from './SidebarSponsors';
 
 export function DocsNav() {
   const { titles } = useContext(TitlesContext);
   return (
     <div className="w-80 px-4 md:px-8 hidden lg:block">
       <div className="sticky top-4">
+        <SidebarSponsors />
         <FrameworkSwitch />
         <ul className="text-sm">
           {titles.map((title) => (
